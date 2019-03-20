@@ -6,13 +6,22 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_Courses"
-            android:title="Opleidingen" />
+            android:title="@string/nav_courses" />
         <item
             android:id="@+id/nav_Dates"
-            android:title="Datums" />
+            android:title="@string/nav_openDayProgram" />
+        <item
+            android:id="@+id/nav_CourseInformation"
+            android:title="@string/nav_courseInformation" />
+        <item
+            android:id="@+id/nav_buildingPlan"
+            android:title="@string/nav_buildingPlan" />
+        <item
+            android:id="@+id/nav_contactForm"
+            android:title="@string/nav_contactForm"  />
         <item
             android:id="@+id/nav_Contact"
-            android:title="Contact" />
+            android:title="@string/nav_contact" />
 
     </group>
     <!--
