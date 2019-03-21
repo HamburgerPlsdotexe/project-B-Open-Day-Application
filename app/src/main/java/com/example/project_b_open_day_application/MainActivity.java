@@ -77,13 +77,13 @@ public class MainActivity extends AppCompatActivity
 
             } else if (id == R.id.nav_Contact) {
 
-            } /*else if (id == R.id.nav_manage) {
+            } else if (id == R.id.nav_BuildingPlan) {
 
-            } else if (id == R.id.nav_share) {
+            } else if (id == R.id.nav_ContactForm) {
 
-            } else if (id == R.id.nav_send) {
+            } else if (id == R.id.nav_CourseInformation) {
 
-            }*/
+            }
 
             DrawerLayout drawer = findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);

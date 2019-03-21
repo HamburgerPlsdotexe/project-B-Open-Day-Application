@@ -7,4 +7,10 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="nav_Courses">Opleidingen CMI</string>
+    <string name="nav_Dates">Datums Open-dagen</string>
+    <string name="nav_Contact">Contact</string>
+    <string name="nav_ContactForm">Vragenformulier</string>
+    <string name="nav_BuildingPlan">Plattegrond</string>
+    <string name="nav_CourseInformation">Informatie over opleidingen</string>
 </resources>
