@@ -77,11 +77,11 @@ public class MainActivity extends AppCompatActivity
 
             } else if (id == R.id.nav_Contact) {
 
-            } else if (id == R.id.nav_buildingPlan) {
+            } else if (id == R.id.nav_BuildingPlan) {
+
+            } else if (id == R.id.nav_ContactForm) {
 
             } else if (id == R.id.nav_CourseInformation) {
-
-            } else if (id == R.id.nav_contactForm) {
 
             }
 
