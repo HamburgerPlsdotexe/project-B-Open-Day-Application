@@ -1,15 +1,15 @@
 # project-B-Open-Day-Application
 
-#blablabla
 
-git checkout master
 
-git pull origin master
+If you want to merge your branch to master on remote, follow the below steps:
 
-git merge "Your branch"
+push your branch say 'br-1' to remote using git push origin br-1.
 
-git push origin master
+switch to master branch on your local repository using git checkout master.
 
-If I have a local branch from a remote one, I don't feel comfortable with merging other branches than this one with the remote. Also I would not push my changes, until I'm happy with what I want to push and also I wouldn't push things at all, that are only for me and my local repository. In your description it seems, that test is only for you? So no reason to publish it.
+update local master with remote master using git pull origin master.
 
-git always tries to respect yours and others changes, and so will --rebase. I don't think I can explain it appropriately, so have a look at the Git book - Rebasing or git-ready: Intro into rebasing for a little description. It's a quite cool feature. - Dino
+merge br-1 into local master using git merge br-1. This may give you conflicts which need to be resolved and changes committed before moving further.
+
+Once merge of br-1 to master on local is committed, push local master to remote master using git push origin master.
