@@ -78,6 +78,10 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Dino\.grad
 		ADDED from C:\Users\Dino\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\Dino\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.project_b_open_day_application.TestActivity
+ADDED from C:\Users\Dino\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:12:9-59
+	android:name
+		ADDED from C:\Users\Dino\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:12:19-47
 activity#com.example.project_b_open_day_application.MainActivity
 ADDED from C:\Users\Dino\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:13:9-22:20
 	android:label
