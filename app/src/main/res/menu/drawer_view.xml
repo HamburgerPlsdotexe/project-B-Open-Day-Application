@@ -5,6 +5,9 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_StartPage"
+            android:title="@string/nav_StartScreen"/>
+        <item
             android:id="@+id/nav_Courses"
             android:title="@string/nav_Courses" />
         <item
@@ -25,18 +28,4 @@
 
 
     </group>
-    <!--
-        <item android:title="Social Media">
-            <menu>
-                <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_menu_share"
-                    android:title="Share" />
-                <item
-                    android:id="@+id/nav_send"
-                    android:icon="@drawable/ic_menu_send"
-                    android:title="Send" />
-            </menu>
-        </item>
-    -->
 </menu>

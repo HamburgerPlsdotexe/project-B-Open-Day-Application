@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,20 +16,24 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity
-            implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Set the content of the activity to use the activity_main.xml layout file
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /*ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);*/
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -46,43 +53,62 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void displaySelectedScreen(int itemId) {
+        //creating fragment object
+        Fragment fragment = null;
+
+        //initializing the fragment object which is selected
+        switch (itemId) {
+            case R.id.nav_StartPage:
+                fragment = new StartPageActivity();
+                break;
+            case R.id.nav_Courses:
+                fragment = new CoursesActivity();
+                break;
+            case R.id.nav_Dates:
+                fragment = new DatesActivity();
+                break;
+            case R.id.nav_CourseInformation:
+                fragment = new CoursesInformationActivity();
+                break;
+            case R.id.nav_ContactForm:
+                fragment = new ContactFormActivity();
+                break;
+            case R.id.nav_BuildingPlan:
+                fragment = new BuildingPlanActivity();
+                break;
+            case R.id.nav_Contact:
+                fragment = new ContactsActivity();
+                break;
+        }
+        //replacing the fragment
+        if (fragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_frame, fragment);
+            ft.commit();
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_Courses) {
-            // Create a new intent to open the {@link NumbersActivity}
-            Intent CoursesIntent = new Intent(MainActivity.this, CoursesActivity.class);
-
-            // Start the new activity
-            startActivity(CoursesIntent);
-
-
-        } else if (id == R.id.nav_Dates) {
-            Intent DatesIntent = new Intent(MainActivity.this, DatesActivity.class);
-            startActivity(DatesIntent);
-
-        } else if (id == R.id.nav_Contact) {
-            Intent ContactIntent = new Intent(MainActivity.this, ContactsActivity.class);
-            startActivity(ContactIntent);
-
-        } else if (id == R.id.nav_BuildingPlan) {
-            Intent BuildPlanIntent = new Intent(MainActivity.this, BuildingPlanActivity.class);
-            startActivity(BuildPlanIntent);
-
-        } else if (id == R.id.nav_ContactForm) {
-            Intent ContactFormIntent = new Intent(MainActivity.this, CoursesActivity.class);
-            startActivity(ContactFormIntent);
-
-        } else if (id == R.id.nav_CourseInformation) {
-            Intent CoursesInformationIntent = new Intent(MainActivity.this, CoursesInformationActivity.class);
-            startActivity(CoursesInformationIntent);
-        }
-
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        displaySelectedScreen(item.getItemId());
         return true;
     }
 }

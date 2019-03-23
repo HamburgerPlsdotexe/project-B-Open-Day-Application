@@ -10,16 +10,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class ContactsActivity extends AppCompatActivity {
-    /* @Nullable
-     @Override
-     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-         return inflater.inflate(R.layout.activity_contact, container, false);
-
-     }*/
+public class ContactsActivity extends Fragment {
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        //returning our layout file
+        //change R.layout.yourlayoutfilename for each of your fragments
+        return inflater.inflate(R.layout.fragment_contact, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        //you can set the title for your toolbar here for different fragments different titles
+        getActivity().setTitle(R.string.nav_Contact);
     }
 }
