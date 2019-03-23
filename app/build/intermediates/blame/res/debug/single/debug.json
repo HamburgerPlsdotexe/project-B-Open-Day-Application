@@ -460,6 +460,10 @@
         "source": "C:\\Users\\Dino\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\c0662112c02dc32991bead9b62484981\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
+        "merged": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_another_test_acitivity.xml.flat",
+        "source": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\src\\main\\res\\layout\\content_another_test_acitivity.xml"
+    },
+    {
         "merged": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Dino\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\273588b7bdce1c3cfaefd8c05e940f69\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -1206,6 +1210,10 @@
     {
         "merged": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "C:\\Users\\Dino\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\273588b7bdce1c3cfaefd8c05e940f69\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_another_test_acitivity.xml.flat",
+        "source": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\src\\main\\res\\layout\\activity_another_test_acitivity.xml"
     },
     {
         "merged": "C:\\Users\\Dino\\AndroidStudioProjects\\project-B-Open-Day-Application\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",

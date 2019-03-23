@@ -1113,6 +1113,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1301,9 +1302,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_another_test_acitivity
 layout activity_main2
 layout activity_test
 layout app_bar_main2
+layout content_another_test_acitivity
 layout content_main2
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1412,6 +1415,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_another_test_acitivity
 string title_activity_main2
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
