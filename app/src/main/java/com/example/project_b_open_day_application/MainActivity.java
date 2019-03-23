@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main2);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -30,40 +32,18 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main2, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -81,15 +61,24 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_Dates) {
+            Intent DatesIntent = new Intent(MainActivity.this, DatesActivity.class);
+            startActivity(DatesIntent);
 
         } else if (id == R.id.nav_Contact) {
+            Intent ContactIntent = new Intent(MainActivity.this, ContactsActivity.class);
+            startActivity(ContactIntent);
 
         } else if (id == R.id.nav_BuildingPlan) {
+            Intent BuildPlanIntent = new Intent(MainActivity.this, BuildingPlanActivity.class);
+            startActivity(BuildPlanIntent);
 
         } else if (id == R.id.nav_ContactForm) {
+            Intent ContactFormIntent = new Intent(MainActivity.this, CoursesActivity.class);
+            startActivity(ContactFormIntent);
 
         } else if (id == R.id.nav_CourseInformation) {
-
+            Intent CoursesInformationIntent = new Intent(MainActivity.this, CoursesInformationActivity.class);
+            startActivity(CoursesInformationIntent);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

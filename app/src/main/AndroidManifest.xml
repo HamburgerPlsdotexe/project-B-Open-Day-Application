@@ -21,8 +21,23 @@
         </activity>
 
         <activity
-            android:name=".CoursesActivity"
-            android:label="@string/nav_Courses"/>
+        android:name=".CoursesActivity"
+        android:label="@string/nav_Courses"/>
+        <activity
+            android:name=".ContactFormActivity"
+            android:label="@string/nav_ContactForm"/>
+        <activity
+            android:name=".ContactsActivity"
+            android:label="@string/nav_Contact"/>
+        <activity
+            android:name=".BuildingPlanActivity"
+            android:label="@string/nav_BuildingPlan"/>
+        <activity
+            android:name=".CoursesInformationActivity"
+            android:label="@string/nav_CourseInformation"/>
+        <activity
+            android:name=".DatesActivity"
+            android:label="@string/nav_Dates"/>
     </application>
 
 </manifest>

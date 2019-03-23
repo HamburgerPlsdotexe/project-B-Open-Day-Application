@@ -10,11 +10,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class CoursesActivity extends Fragment {
-    @Nullable
+public class CoursesActivity extends AppCompatActivity {
+    /*@Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.activity_courses, container, false);
 
+    }*/
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_courses);
     }
 }

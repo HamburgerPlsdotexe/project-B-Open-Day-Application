@@ -12,5 +12,5 @@
     <string name="nav_Contact">Contact</string>
     <string name="nav_ContactForm">Vragenformulier</string>
     <string name="nav_BuildingPlan">Plattegrond</string>
-    <string name="nav_CourseInformation">Informatie over opleidingen</string>
+    <string name="nav_CourseInformation">Informatie opleidingen</string>
 </resources>
