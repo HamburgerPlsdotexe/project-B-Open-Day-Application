@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".BasicActivityBlyat"
+            android:label="@string/title_activity_basic_blyat"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".BASICSHIT"
             android:label="@string/title_activity_basicshit"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AnotherTestAcitivity"
             android:label="@string/title_activity_another_test_acitivity"
