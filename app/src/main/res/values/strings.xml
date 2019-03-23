@@ -12,8 +12,6 @@
     <string name="nav_Contact">Contact</string>
     <string name="nav_ContactForm">Vragenformulier</string>
     <string name="nav_BuildingPlan">Plattegrond</string>
-    <string name="nav_CourseInformation">Informatie over opleidingen</string>
-    <string name="title_activity_another_test_acitivity">AnotherTestAcitivity</string>
-    <string name="title_activity_basicshit">BASICSHIT</string>
-    <string name="title_activity_basic_blyat">BasicActivityBlyat</string>
+    <string name="nav_CourseInformation">Informatie opleidingen</string>
+    <string name="nav_StartScreen">Startscherm</string>
 </resources>
