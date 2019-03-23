@@ -18,6 +18,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.project_b_open_day_application.AnotherTestAcitivity"
+            android:label="@string/title_activity_another_test_acitivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.project_b_open_day_application.TestActivity" />
         <activity
             android:name="com.example.project_b_open_day_application.MainActivity"
