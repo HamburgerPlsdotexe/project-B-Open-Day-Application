@@ -1,3 +1,6 @@
+# Idea files (workspace etc)
+*.idea
+
 # Compiled class file
 *.class
 
