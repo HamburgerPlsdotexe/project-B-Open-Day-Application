@@ -14,4 +14,11 @@
     <string name="nav_BuildingPlan">Plattegrond</string>
     <string name="nav_CourseInformation">Informatie opleidingen</string>
     <string name="nav_StartScreen">Startscherm</string>
+    <string name="banner">banner for each page</string>
+    <string name="naam_voor_formulier">Naam</string>
+    <string name="emailadressgebruiken">Email</string>
+    <string name="onderwerp">Onderwerp</string>
+    <string name="bericht_contactformulier">Bericht</string>
+    <string name="titelvragenformulier">Vragen formulier</string>
+    <string name="uitlegvragenformulier">Als je nog vragen heb, kan je deze op deze pagina stellen. Vul de gegevens in en verzend je bericht, we zullen je binnen 3 werkdagen bereiken.</string>
 </resources>
