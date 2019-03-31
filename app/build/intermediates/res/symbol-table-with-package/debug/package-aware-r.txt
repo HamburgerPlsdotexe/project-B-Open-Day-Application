@@ -1013,6 +1013,7 @@ drawable design_snackbar_background
 drawable hro_banner
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_menu
 drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_manage
@@ -1091,6 +1092,7 @@ id collapseActionView
 id container
 id content
 id contentPanel
+id content_frame
 id coordinator
 id custom
 id customPanel
@@ -1113,7 +1115,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1130,6 +1131,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -1155,6 +1157,7 @@ id nav_ContactForm
 id nav_CourseInformation
 id nav_Courses
 id nav_Dates
+id nav_StartPage
 id nav_view
 id navigation_header_container
 id never
@@ -1229,6 +1232,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1302,12 +1306,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_another_test_acitivity
-layout activity_main2
-layout activity_test
-layout app_bar_main2
-layout content_another_test_acitivity
-layout content_main2
+layout activity_main
+layout app_bar_main
+layout content_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1322,9 +1323,16 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_building_plan
+layout fragment_contact
+layout fragment_contact_form
+layout fragment_course_information
+layout fragment_courses
+layout fragment_dates
+layout fragment_start_page
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
-layout nav_header_main2
+layout nav_header_main
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1344,7 +1352,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu activity_main2_drawer
+menu drawer_view
 menu main2
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1403,6 +1411,7 @@ string nav_ContactForm
 string nav_CourseInformation
 string nav_Courses
 string nav_Dates
+string nav_StartScreen
 string nav_header_desc
 string nav_header_subtitle
 string nav_header_title
@@ -1415,7 +1424,6 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
-string title_activity_another_test_acitivity
 string title_activity_main2
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

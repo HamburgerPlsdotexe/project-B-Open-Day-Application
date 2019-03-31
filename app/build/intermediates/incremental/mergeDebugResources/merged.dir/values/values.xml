@@ -592,9 +592,10 @@
     <string name="nav_BuildingPlan">Plattegrond</string>
     <string name="nav_Contact">Contact</string>
     <string name="nav_ContactForm">Vragenformulier</string>
-    <string name="nav_CourseInformation">Informatie over opleidingen</string>
+    <string name="nav_CourseInformation">Informatie opleidingen</string>
     <string name="nav_Courses">Opleidingen CMI</string>
     <string name="nav_Dates">Datums Open-dagen</string>
+    <string name="nav_StartScreen">Startscherm</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_title">Android Studio</string>
@@ -607,7 +608,6 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="title_activity_another_test_acitivity">AnotherTestAcitivity</string>
     <string name="title_activity_main2">Main2Activity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
