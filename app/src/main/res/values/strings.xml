@@ -21,4 +21,5 @@
     <string name="bericht_contactformulier">Bericht</string>
     <string name="titelvragenformulier">Vragen formulier</string>
     <string name="uitlegvragenformulier">Als je nog vragen heb, kan je deze op deze pagina stellen. Vul de gegevens in en verzend je bericht, we zullen je binnen 3 werkdagen bereiken.</string>
+    <string name="send_button_description">Verzend</string>
 </resources>

@@ -16,15 +16,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/TitelPagina"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:text="@string/titelvragenformulier"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/UitlegPagina"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,11 +33,11 @@
                 android:layout_marginBottom="8dp"
                 android:animateLayoutChanges="true"
                 app:boxBackgroundColor="@android:color/darker_gray"
-                app:boxBackgroundMode="outline"
-                app:boxStrokeColor="@color/colorPrimaryDark"
-                app:boxStrokeWidth="2dp"
+                app:boxBackgroundMode="filled"
                 app:boxCornerRadiusBottomEnd="4dp"
                 app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:boxStrokeWidth="2dp"
 
                 app:hintEnabled="true">
 
@@ -70,7 +61,7 @@
                 android:layout_marginRight="8dp"
                 android:animateLayoutChanges="true"
                 app:boxBackgroundColor="@android:color/darker_gray"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
                 app:boxCornerRadiusBottomEnd="4dp"
                 app:boxCornerRadiusTopStart="4dp"
                 app:boxStrokeColor="@color/colorPrimaryDark"
@@ -98,7 +89,7 @@
                 android:layout_marginRight="8dp"
                 android:animateLayoutChanges="true"
                 app:boxBackgroundColor="@android:color/darker_gray"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
                 app:boxCornerRadiusBottomEnd="4dp"
                 app:boxCornerRadiusTopStart="4dp"
                 app:boxStrokeColor="@color/colorPrimaryDark"
@@ -125,7 +116,7 @@
                 android:layout_marginRight="8dp"
                 android:animateLayoutChanges="true"
                 app:boxBackgroundColor="@android:color/darker_gray"
-                app:boxBackgroundMode="outline"
+                app:boxBackgroundMode="filled"
                 app:boxCornerRadiusBottomEnd="4dp"
                 app:boxCornerRadiusTopStart="4dp"
                 app:boxStrokeColor="@color/colorPrimaryDark"
@@ -142,6 +133,12 @@
                     android:scrollbars="vertical" />
 
             </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/sendmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_button_description" />
 
         </LinearLayout>
     </ScrollView>
