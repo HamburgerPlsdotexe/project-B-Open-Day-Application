@@ -1053,7 +1053,6 @@ id Inhoud_onderwerpveld
 id META
 id SHIFT
 id SYM
-id TitelPagina
 id UitlegPagina
 id action0
 id action_bar
@@ -1209,6 +1208,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id sendmessage
 id shortcut
 id showCustom
 id showHome
@@ -1440,6 +1440,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string send_button_description
 string status_bar_notification_info_overflow
 string titelvragenformulier
 string title_activity_main2
