@@ -17,7 +17,7 @@
         android:id="@+id/spinner_building"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_below="@id/tv_header"
+        android:layout_below="@id/spinner_floor"
         android:clickable="true"
         android:entries="@array/buildingArray"
         android:focusable="true"
@@ -29,7 +29,7 @@
         android:id="@+id/spinner_floor"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_below="@id/spinner_building"
+        android:layout_below="@id/tv_header"
         android:clickable="true"
         android:entries="@array/floorArray"
         android:focusable="true"
@@ -41,7 +41,7 @@
         android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:text="@string/button_refreshPDF"
-        android:layout_below="@id/spinner_floor"
+        android:layout_below="@id/spinner_building"
         android:layout_centerHorizontal="true"/>
 
     <com.github.barteksc.pdfviewer.PDFView

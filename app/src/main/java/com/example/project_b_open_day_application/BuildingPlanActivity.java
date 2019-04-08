@@ -33,7 +33,17 @@ public class BuildingPlanActivity extends Fragment {
         //change R.layout.yourlayoutfilename for each of your fragments
         View fragment_BuildingPlan = inflater.inflate(R.layout.fragment_building_plan, container, false);
 
+        //declaring the fragment Buildingplan in spinnerbuilding.
+        // So all ID from this fragment can be found there
         Spinner spinnerBuilding = fragment_BuildingPlan.findViewById(R.id.spinner_building);
+
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapterBuilding = ArrayAdapter.createFromResource(this.getActivity(), R.array.buildingArray, android.R.layout.simple_spinner_dropdown_item);
+        // Specify the layout to use when the list of choices appears
+        adapterBuilding.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        //If clicked on item from Building, it gives a id that i use from array
+        // that has all the different buildings.
         spinnerBuilding.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
@@ -44,7 +54,13 @@ public class BuildingPlanActivity extends Fragment {
             }
         });
 
+        // Apply the adapter to the spinner
+        spinnerBuilding.setAdapter(adapterBuilding);
+
         Spinner spinnerFloor = fragment_BuildingPlan.findViewById(R.id.spinner_floor);
+        ArrayAdapter<CharSequence> adapterFloor = ArrayAdapter.createFromResource(this.getActivity(), R.array.floorArray, android.R.layout.simple_spinner_dropdown_item);
+        adapterFloor.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         spinnerFloor.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -55,12 +71,7 @@ public class BuildingPlanActivity extends Fragment {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity().getApplicationContext(), R.array.buildingArray, android.R.layout.simple_spinner_item);
-        // Specify the layout to use when the list of choices appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
-        spinnerBuilding.setAdapter(adapter);
+        spinnerFloor.setAdapter(adapterFloor);
 
         //Find ID of button and set an Onclicklistener to the button
         Button buttonPDF = (Button) fragment_BuildingPlan.findViewById(R.id.button_refreshPDF);
@@ -73,7 +84,6 @@ public class BuildingPlanActivity extends Fragment {
             }
         });
         return fragment_BuildingPlan;
-
     }
 
     @Override
