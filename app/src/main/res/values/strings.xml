@@ -14,4 +14,24 @@
     <string name="nav_BuildingPlan">Plattegrond</string>
     <string name="nav_CourseInformation">Informatie opleidingen</string>
     <string name="nav_StartScreen">Startscherm</string>
+    <string name="button_refreshPDF">Refresh PDF</string>
+
+    <string name="array_buildingText">Kies hier het gebouw</string>
+    <string-array name="buildingArray">
+        <item name="99">WN</item>
+        <item name="103">WD</item>
+        <item name="107">H</item>
+    </string-array>
+
+    <string name="array_floorText">Kies hier de gewenste verdieping </string>
+    <string-array name="floorArray">
+        <item name="BG">Begaande grond</item>
+        <item name="1e">1ste verdieping</item>
+        <item name="2e">2de verdieping</item>
+        <item name="3e">3de verdieping</item>
+        <item name="4e">4de verdieping</item>
+        <item name="5e">5de verdieping</item>
+    </string-array>
+
 </resources>
+
