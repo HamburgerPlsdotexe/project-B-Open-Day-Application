@@ -28,16 +28,10 @@ public class ContactFormActivity extends Fragment implements View.OnClickListene
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
         View v = inflater.inflate(R.layout.fragment_contact_form, container, false);
-        EditText subject = v.findViewById(R.id.Inhoud_onderwerpveld);
-        EditText name = v.findViewById(R.id.Inhoud_naamveld);
-        EditText email = v.findViewById(R.id.Inhoud_emailveld);
-        EditText message = v.findViewById(R.id.Inhoud_berichtveld);
+
         sendBtn = v.findViewById(R.id.sendmessage);
 
-        this.subjectString = subject.getText().toString();
-        this.emailString = email.getText().toString();
-        this.messageString = message.getText().toString();
-        this.nameString = name.getText().toString();
+
 
         sendBtn.setOnClickListener(this);
         return v;
@@ -62,7 +56,16 @@ public class ContactFormActivity extends Fragment implements View.OnClickListene
     }
 
     public void onClick(View view){
-        this.sendMail(this.subjectString, this.messageString, "service@hr.nl ");
+        EditText subject = getActivity().findViewById(R.id.Inhoud_onderwerpveld);
+        EditText name = getActivity().findViewById(R.id.Inhoud_naamveld);
+        EditText email = getActivity().findViewById(R.id.Inhoud_emailveld);
+        EditText message = getActivity().findViewById(R.id.Inhoud_berichtveld);
+
+        subjectString = subject.getText().toString();
+        emailString = email.getText().toString();
+        messageString = message.getText().toString();
+        nameString = name.getText().toString();
+        sendMail(subjectString, messageString, "service@hr.nl ");
     }
 
 }
