@@ -1,15 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/nav_ContactForm"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/UitlegPagina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/uitlegvragenformulier" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutName"
+                android:layout_width="302dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                app:boxBackgroundColor="@android:color/darker_gray"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:boxStrokeWidth="2dp"
+
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Inhoud_naamveld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/naam_voor_formulier"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutEmail"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:animateLayoutChanges="true"
+                app:boxBackgroundColor="@android:color/darker_gray"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:boxStrokeWidth="2dp"
+                app:errorEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Inhoud_emailveld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/emailadressgebruiken"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutSubject"
+                android:layout_width="302dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:animateLayoutChanges="true"
+                app:boxBackgroundColor="@android:color/darker_gray"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:boxStrokeWidth="2dp"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Inhoud_onderwerpveld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/onderwerp"
+                    android:inputType="textPersonName|textEmailSubject" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutMessage"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:animateLayoutChanges="true"
+                app:boxBackgroundColor="@android:color/darker_gray"
+                app:boxBackgroundMode="filled"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:boxStrokeWidth="2dp"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Inhoud_berichtveld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bericht_contactformulier"
+                    android:inputType="textMultiLine|textPersonName|textEmailSubject"
+                    android:maxLines="8"
+                    android:scrollbars="vertical" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/sendmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_button_description" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
