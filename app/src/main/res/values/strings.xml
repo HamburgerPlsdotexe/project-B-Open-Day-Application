@@ -1,4 +1,5 @@
 <resources>
+    <!--Basic String used through the whole app-->
     <string name="app_name">project-B-Open-Day-Application</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -14,8 +15,10 @@
     <string name="nav_BuildingPlan">Plattegrond</string>
     <string name="nav_CourseInformation">Informatie opleidingen</string>
     <string name="nav_StartScreen">Startscherm</string>
-    <string name="button_refreshPDF">Refresh PDF</string>
+    <string name="banner">banner for each page</string>
 
+    <!--strings used only in BuildingPlan Fragment-->
+    <string name="button_refreshPDF">Refresh PDF</string>
     <string name="array_buildingText">Kies hier het gebouw</string>
     <string-array name="buildingArray">
         <item name="99">WN</item>
@@ -32,6 +35,15 @@
         <item name="4e">4de verdieping</item>
         <item name="5e">5de verdieping</item>
     </string-array>
+
+    <!--Strings used only in ContactForm Fragment-->
+    <string name="naam_voor_formulier">Naam</string>
+    <string name="emailadressgebruiken">Email</string>
+    <string name="onderwerp">Onderwerp</string>
+    <string name="bericht_contactformulier">Bericht</string>
+    <string name="titelvragenformulier">Vragen formulier</string>
+    <string name="uitlegvragenformulier">Als je nog vragen heb, kan je deze op deze pagina stellen. Vul de gegevens in en verzend je bericht, we zullen je binnen 3 werkdagen bereiken.</string>
+    <string name="send_button_description">Verzend</string>
 
 </resources>
 
