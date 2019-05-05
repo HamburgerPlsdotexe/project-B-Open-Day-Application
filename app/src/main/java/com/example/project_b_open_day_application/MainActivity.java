@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new StartPageActivity();
                 break;
             case R.id.nav_Courses:
-                fragment = new CoursesActivity();
+                fragment = new ItemListActivity();
                 break;
             case R.id.nav_Dates:
                 fragment = new DatesActivity();
