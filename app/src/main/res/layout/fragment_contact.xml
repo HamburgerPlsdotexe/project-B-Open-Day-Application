@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView2"
         android:layout_marginLeft="8dp"
-        android:text="@string/contact_informatie_header"
+        android:text="@string/contact_informatie"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         />
@@ -70,7 +70,7 @@
         android:layout_below="@+id/divider_below_address"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        android:text="@string/header_openingstijden"
+        android:text="@string/openingstijden"
         android:textSize="16sp"
         android:textColor="@android:color/black"
         />
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_below="@+id/actual_times"
-            android:text="@string/waarschuwing_vakantietijden"
+            android:text="@string/warning_tijden"
             android:textSize="13sp"
             />
 
