@@ -45,5 +45,9 @@
     <string name="uitlegvragenformulier">Als je nog vragen heb, kan je deze op deze pagina stellen. Vul de gegevens in en verzend je bericht, we zullen je binnen 3 werkdagen bereiken.</string>
     <string name="send_button_description">Verzend</string>
 
+    <!--Strings used only in Contact Fragment-->
+    <string name="warning_tijden">Let op: tijdens vakantieperiodes kunnen aangepaste openingstijden gelden.</string>
+    <string name="contact_informatie">Contact informatie</string>
+    <string name="openingstijden">Openingstijden</string>
 </resources>
 
