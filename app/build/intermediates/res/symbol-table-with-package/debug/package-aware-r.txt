@@ -1089,6 +1089,7 @@ id add
 id alertTitle
 id all
 id always
+id app_bar
 id async
 id auto
 id barrier
@@ -1121,6 +1122,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detail_toolbar
 id dimensions
 id direct
 id disableHome
@@ -1133,12 +1135,14 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fill
 id fill_horizontal
 id fill_vertical
 id filled
 id fixed
 id forever
+id frameLayout
 id ghost_view
 id gone
 id group_divider
@@ -1147,12 +1151,16 @@ id home
 id homeAsUp
 id icon
 id icon_group
+id id_text
 id ifRoom
 id image
 id imageView
 id info
 id invisible
 id italic
+id item_detail
+id item_detail_container
+id item_list
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
@@ -1269,6 +1277,7 @@ id titleDividerNoCustom
 id title_template
 id toolbar
 id toolbar2
+id toolbar_layout
 id top
 id topPanel
 id touch_outside
@@ -1334,6 +1343,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_item_detail
+layout activity_item_list
 layout activity_main
 layout app_bar_main
 layout content_main
@@ -1358,6 +1369,9 @@ layout fragment_course_information
 layout fragment_courses
 layout fragment_dates
 layout fragment_start_page
+layout item_detail
+layout item_list
+layout item_list_content
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_main

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
 MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\4ef45aed829780749c9d0560783f50fa\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\258d2c70b0f63a59264a00b5b4dbe0d3\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a740cc96f6f9263ba2042ea225a80681\AndroidManifest.xml:17:1-22:12
@@ -39,25 +39,25 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\hieu1\.gradle\cac
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\43c51d2acbac318d1ae708e98cd9b9df\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\1d625d1ac555b51ce29a8636846ec29b\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b1e3e2117e9ca6e90e2a9eb68a814eef\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:3:5-57
 		INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:5:5-33:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\258d2c70b0f63a59264a00b5b4dbe0d3\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\258d2c70b0f63a59264a00b5b4dbe0d3\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\hieu1\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\7f166591718e3aa37ad835ec3235fc42\AndroidManifest.xml:9:5-20
@@ -96,6 +96,12 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.example.project_b_open_day_application.ItemDetailActivity
+ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:23:9-31:20
+	android:theme
+		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml:24:13-47
 uses-sdk
 INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\hieu1\AndroidStudioProjects\project-B-Open-Day-Application\app\src\main\AndroidManifest.xml
