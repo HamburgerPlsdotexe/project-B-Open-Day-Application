@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        app:srcCompat="@drawable/wijnhaven107_locatie"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/contact_info_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginLeft="8dp"
+        android:text="@string/contact_informatie_header"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/address_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_info_header"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Wijnhaven 107 \n3011 WN Rotterdam"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_info_header"
+        android:layout_marginLeft="64dp"
+        android:layout_toRightOf="@id/address_info"
+        android:layout_marginTop="8dp"
+        android:text="studievoorlichting@hr.nl \n010 - 794 4400"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        />
+
+    <View
+        android:id="@+id/divider_below_address"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/address_info"
+        />
+
+    <TextView
+        android:id="@+id/tijden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_below_address"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/header_openingstijden"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+    <RelativeLayout
+        android:id="@+id/times"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tijden"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:id="@+id/actual_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maandag\t\t\t7.30 - 22.00 uur\nDinsdag\t\t\t7.30 - 21.00 uur\nWoensdag\t\t7.30 - 22.00 uur\nDonderdag\t\t7.30 - 19.30 uur\nVrijdag\t\t\t\t7.30 - 17.30 uur"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/warning"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/actual_times"
+            android:text="@string/waarschuwing_vakantietijden"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_below_warning"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/times"
+        />
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_below_warning"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Routebeschrijving"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/route"
+        android:text="Met het openbaar vervoer:\nBij metro Beurs uitstappen, oversteken naar het Maritiem Museum. Eenmaal daar, achter het museum bevind zich het standbeeld De Verwoeste Stad. Loop nu langs het kanaal. Tot u er bent."
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        />
+
+
+</RelativeLayout>
