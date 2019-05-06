@@ -5,21 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/nav_StartScreen"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:lineSpacingExtra="10sp"
+            android:scrollbars="vertical"
+            android:text="@string/tutorial"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </android.support.v4.widget.NestedScrollView>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_alignTop="@id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:srcCompat="@drawable/hro_banner" />
+
+
 
 </RelativeLayout>

@@ -17,6 +17,11 @@
     <string name="nav_StartScreen">Startscherm</string>
     <string name="banner">banner for each page</string>
 
+    <string name="tutorial">Welcome to the Hogeschool Rotterdam Open Day app. There is a navigation menu on the left corner from the app.
+    Press that to see the various options of sub-menus that are inside the app. The "Datums Open-Dagen" gives you the option to take a look at all available
+    dates from the open days in CMI. Contact is just a contact page with all the information provided to contact the school. There is a form for if you have questions about the
+    courses or the app, even. A blueprint of all available floors inside the buildings under "Plattegronden" and information about all the courses in the CMI area.</string>
+
     <!--strings used only in BuildingPlan Fragment-->
     <string name="button_refreshPDF">Refresh PDF</string>
     <string name="array_buildingText">Kies hier het gebouw</string>
