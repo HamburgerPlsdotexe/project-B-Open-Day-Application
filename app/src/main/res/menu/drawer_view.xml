@@ -14,9 +14,6 @@
             android:id="@+id/nav_Dates"
             android:title="@string/nav_Dates" />
         <item
-            android:id="@+id/nav_CourseInformation"
-            android:title="@string/nav_CourseInformation" />
-        <item
             android:id="@+id/nav_ContactForm"
             android:title="@string/nav_ContactForm"  />
         <item

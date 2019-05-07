@@ -79,9 +79,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_Dates:
                 fragment = new DatesActivity();
                 break;
-            case R.id.nav_CourseInformation:
-                fragment = new CoursesInformationActivity();
-                break;
             case R.id.nav_ContactForm:
                 fragment = new ContactFormActivity();
                 break;
