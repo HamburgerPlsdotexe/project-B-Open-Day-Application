@@ -53,5 +53,16 @@
     <string name="warning_tijden">Let op: tijdens vakantieperiodes kunnen aangepaste openingstijden gelden.</string>
     <string name="contact_informatie">Contact informatie</string>
     <string name="openingstijden">Openingstijden</string>
+    <string name="time_friday">7.30 - 17.30 uur</string>
+    <string name="time_thursday">7.30 - 19.30 uur</string>
+    <string name="time_wednesday">7.30 - 22.00 uur</string>
+    <string name="time_tuesday">7.30 - 21.00 uur</string>
+    <string name="time_monday">7.30 - 22.00 uur</string>
+    <string name="routebeschrijving">Routebeschrijving</string>
+    <string name="maandag">Maandag</string>
+    <string name="dinsdag">Dinsdag</string>
+    <string name="woensdag">Woensdag</string>
+    <string name="donderdag">Donderdag</string>
+    <string name="vrijdag">Vrijdag</string>
 </resources>
 
