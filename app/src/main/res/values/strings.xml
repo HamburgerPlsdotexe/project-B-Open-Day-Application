@@ -61,5 +61,7 @@
     <string name="woensdag">Woensdag</string>
     <string name="donderdag">Donderdag</string>
     <string name="vrijdag">Vrijdag</string>
+    <string name="phoneNumber">010-7944400</string>
+    <string name="CMIBuildingAdress">Wijnhaven 107 \n3011 WN Rotterdam</string>
 </resources>
 
