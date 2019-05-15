@@ -55,12 +55,14 @@
             android:layout_marginStart="60dp"
             android:layout_marginLeft="-240dp"
             android:layout_toRightOf="@id/address_info"
-            android:text="studievoorlichting@hr.nl"
-            android:textColor="@android:color/black"
+            android:textColorLink="#0000EE"
             android:textSize="14sp"
+            android:text="@string/email_contact"
             android:layout_toEndOf="@id/address_info"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:autoLink="email"
+            />
 
         <TextView
             android:id="@+id/phoneNumber"
@@ -68,6 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/emailAdress"
             android:layout_marginStart="60dp"
+            android:textColorLink="#0000EE"
+            android:autoLink="phone"
             android:layout_marginLeft="-240dp"
             android:layout_toEndOf="@id/address_info"
             android:layout_toRightOf="@id/address_info"
