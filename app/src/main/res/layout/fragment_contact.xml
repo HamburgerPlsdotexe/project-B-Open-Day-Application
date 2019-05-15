@@ -13,13 +13,15 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerVertical="true"/>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="396dp"
-        app:srcCompat="@drawable/wijnhaven107_locatie"
-        android:clickable="true"
-        android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="396dp"
+            android:clickable="true"
+            android:contentDescription="Image of the location"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/wijnhaven107_locatie" />
 
     <TextView
         android:id="@+id/contact_info_header"
@@ -29,7 +31,8 @@
         android:layout_marginLeft="8dp"
         android:text="@string/contact_informatie"
         android:textColor="@android:color/black"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layout_marginStart="8dp" />
 
     <TextView
         android:id="@+id/address_info"
@@ -38,20 +41,40 @@
         android:layout_below="@+id/contact_info_header"
         android:layout_marginTop="4dp"
         android:layout_marginLeft="8dp"
-        android:text="Wijnhaven 107 \n3011 WN Rotterdam"
+        android:text="@string/CMIBuildingAdress"
         android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:layout_marginStart="8dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/contact_info_header"
-        android:layout_marginLeft="64dp"
-        android:layout_toRightOf="@id/address_info"
-        android:layout_marginTop="4dp"
-        android:text="studievoorlichting@hr.nl \n010 - 794 4400"
-        android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailAdress"
+            android:layout_below="@id/contact_info_header"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_toRightOf="@id/address_info"
+            android:text="studievoorlichting@hr.nl"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_toEndOf="@id/address_info"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailAdress"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="-240dp"
+            android:layout_toEndOf="@id/address_info"
+            android:layout_toRightOf="@id/address_info"
+            android:text="@string/phoneNumber"
+            android:textColor="@android:color/black"
+            android:clickable="true"
+            android:focusable="true" />
 
     <View
         android:id="@+id/divider_below_address"
@@ -70,14 +93,16 @@
         android:layout_marginLeft="8dp"
         android:text="@string/openingstijden"
         android:textSize="16sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:layout_marginStart="8dp" />
     <RelativeLayout
         android:id="@+id/times"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_below="@id/tijden"
         android:layout_marginTop="4dp"
-        android:layout_marginLeft="8dp">
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp">
         <RelativeLayout
             android:id="@+id/days"
             android:layout_width="100dp"
@@ -129,7 +154,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/days"
                 android:text="@string/time_monday"
-                android:textSize="13sp"/>
+                android:textSize="13sp"
+            android:layout_toEndOf="@id/days" />
             <TextView
                 android:id="@+id/time_tuesday"
                 android:layout_width="wrap_content"
@@ -137,7 +163,8 @@
                 android:layout_toRightOf="@id/days"
                 android:layout_below="@id/time_monday"
                 android:text="@string/time_tuesday"
-                android:textSize="13sp"/>
+                android:textSize="13sp"
+                android:layout_toEndOf="@id/days" />
             <TextView
                 android:id="@+id/time_wednesday"
                 android:layout_width="wrap_content"
@@ -145,7 +172,8 @@
                 android:layout_toRightOf="@id/days"
                 android:layout_below="@id/time_tuesday"
                 android:text="@string/time_wednesday"
-                android:textSize="13sp"/>
+                android:textSize="13sp"
+                android:layout_toEndOf="@id/days" />
             <TextView
                 android:id="@+id/time_thursday"
                 android:layout_width="wrap_content"
@@ -153,7 +181,8 @@
                 android:layout_toRightOf="@id/days"
                 android:layout_below="@id/time_wednesday"
                 android:text="@string/time_thursday"
-                android:textSize="13sp"/>
+                android:textSize="13sp"
+                android:layout_toEndOf="@id/days" />
             <TextView
                 android:id="@+id/time_friday"
                 android:layout_width="wrap_content"
@@ -161,7 +190,8 @@
                 android:layout_toRightOf="@id/days"
                 android:layout_below="@id/time_thursday"
                 android:text="@string/time_friday"
-                android:textSize="13sp"/>
+                android:textSize="13sp"
+                android:layout_toEndOf="@id/days" />
     </RelativeLayout>
         <TextView
             android:id="@+id/warning"
@@ -171,7 +201,8 @@
             android:layout_below="@+id/times"
             android:layout_marginLeft="8dp"
             android:text="@string/warning_tijden"
-            android:textSize="13sp"/>
+            android:textSize="13sp"
+            android:layout_marginStart="8dp" />
     <View
         android:id="@+id/divider_below_warning"
         android:layout_width="match_parent"
@@ -190,7 +221,8 @@
         android:layout_marginTop="8dp"
         android:text="@string/routebeschrijving"
         android:textSize="16sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:layout_marginStart="8dp" />
     <TextView
         android:layout_marginLeft="8dp"
         android:layout_marginTop="4dp"
@@ -199,7 +231,8 @@
         android:layout_below="@id/route"
         android:text="Met het openbaar vervoer:\nBij metro Beurs uitstappen, oversteken naar het Maritiem Museum. Eenmaal daar, achter het museum bevind zich het standbeeld De Verwoeste Stad. Loop nu langs het kanaal. De ingang staat tegenover de fietsenrekken."
         android:textSize="14sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black"
+        android:layout_marginStart="8dp" />
     </RelativeLayout>
 
 </ScrollView>
