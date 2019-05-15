@@ -61,5 +61,6 @@
     <string name="woensdag">Woensdag</string>
     <string name="donderdag">Donderdag</string>
     <string name="vrijdag">Vrijdag</string>
+    <string name="ExplanationLegend">A legend that explains the floorplans</string>
 </resources>
 

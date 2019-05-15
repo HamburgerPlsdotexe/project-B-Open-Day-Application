@@ -81,8 +81,20 @@ public class BuildingPlanActivity extends Fragment {
                 pdfView = (PDFView) getView().findViewById(R.id.pdfView);
                 String pdfFile = BuildingSelected + " " + FloorSelected + ".pdf";
                 displayFromAsset(pdfFile);
+                PDFView pdfView_legend = (PDFView) getView().findViewById(R.id.pdfView_legend);
+                pdfView_legend.fromAsset("legenda.pdf").load();
             }
         });
+
+        //Set the legend pdfViewer
+//        PDFView pdfView_legend = (PDFView) getView().findViewById(R.id.pdfView_legend);
+//        pdfView_legend.fromAsset("legenda.pdf").load();
+//                .enableSwipe(false)
+//                .swipeHorizontal(false)
+//                .enableAnnotationRendering(true)
+//               .scrollHandle(new DefaultScrollHandle(this))
+//                .load();
+
         return fragment_BuildingPlan;
     }
 
