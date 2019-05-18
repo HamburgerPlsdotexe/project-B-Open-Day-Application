@@ -1,7 +1,9 @@
 package com.example.project_b_open_day_application;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +15,8 @@ import android.view.MenuItem;
 import com.example.project_b_open_day_application.ItemDetailFragment;
 import com.example.project_b_open_day_application.ItemListActivity;
 import com.example.project_b_open_day_application.R;
+
+import java.util.Calendar;
 
 /**
  * An activity representing a single Item detail screen. This
@@ -33,8 +37,16 @@ public class ItemDetailActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own detail action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent shareintent = new Intent();
+                shareintent.setAction(Intent.ACTION_SEND);
+                shareintent.putExtra(Intent.EXTRA_SUBJECT, "Kijk naar deze open dag!");
+                shareintent.setType("text/plain");
+                shareintent.putExtra(Intent.EXTRA_TEXT, "Ik heb een CMI open dag gevonden op Hogeschool Rotterdam" +
+                        " \nHet bevindt zich op 30 februari 2019 van 10:00 tot 16:00");
+                ////shareintent.putExtra(android.intent.extra.STREAM, message); to add attachments
+                if (shareintent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(Intent.createChooser(shareintent, "Choose your platform"));
+                }
             }
         });
 
