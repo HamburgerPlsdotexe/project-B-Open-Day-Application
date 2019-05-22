@@ -11,11 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.project_b_open_day_application.dummy.DummyContent;
@@ -50,26 +48,7 @@ public class ItemListActivity extends Fragment {
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle(getActivity().getTitle());
 
-        FloatingActionButton fab = (FloatingActionButton) v.findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent calendarIntent = new Intent(Intent.ACTION_INSERT, CalendarContract.Events.CONTENT_URI);
-                Calendar beginTime = Calendar.getInstance();
-                beginTime.set(2019, 3, 24, 11, 00);
-                Calendar endTime = Calendar.getInstance();
-                endTime.set(2019, 3, 24, 16, 30);
-                calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
-                calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
-                calendarIntent.putExtra(CalendarContract.Events.TITLE, "Open day CMI HR");
-                calendarIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Secret dojo");
-                String titleCalenderIntent = "Choose your prefered calendar";
-                Intent calendarIntentwithChooser = Intent.createChooser(calendarIntent, titleCalenderIntent);
-                if (calendarIntentwithChooser.resolveActivity(getActivity().getPackageManager()) != null) {
-                    startActivity(calendarIntentwithChooser);
-                }
-            }
-        });
+
 
         if (v.findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
