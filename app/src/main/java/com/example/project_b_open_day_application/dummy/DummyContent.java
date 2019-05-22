@@ -23,13 +23,14 @@ public class DummyContent {
      */
     public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
 
-    private static final int COUNT = 25;
-
     static {
-        // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
-        }
+        // Add some sample items
+        addItem(new DummyItem(String.valueOf(1), "Communicatie ", "Voor kanslozen"));
+        addItem(new DummyItem(String.valueOf(2), "Communicatie en Media Design", "Voor fags"));
+        addItem(new DummyItem(String.valueOf(3), "Creative Media and Gaming Technology", "Voor dombos"));
+        addItem(new DummyItem(String.valueOf(4), "Informatica", "Voor krijgers"));
+        addItem(new DummyItem(String.valueOf(5), "Technisch Informatica", "Voor tryharders"));
+
     }
 
     private static void addItem(DummyItem item) {
