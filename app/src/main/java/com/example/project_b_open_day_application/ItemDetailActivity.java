@@ -1,20 +1,14 @@
 package com.example.project_b_open_day_application;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
-
-import com.example.project_b_open_day_application.ItemDetailFragment;
-import com.example.project_b_open_day_application.ItemListActivity;
-import com.example.project_b_open_day_application.R;
 
 import java.util.Calendar;
 
@@ -33,7 +27,7 @@ public class ItemDetailActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.sharebutton);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +40,27 @@ public class ItemDetailActivity extends AppCompatActivity {
                 ////shareintent.putExtra(android.intent.extra.STREAM, message); to add attachments
                 if (shareintent.resolveActivity(getPackageManager()) != null) {
                     startActivity(Intent.createChooser(shareintent, "Choose your platform"));
+                }
+            }
+        });
+
+        FloatingActionButton fad = (FloatingActionButton) findViewById(R.id.fab);
+        fad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent calendarIntent = new Intent(Intent.ACTION_INSERT, CalendarContract.Events.CONTENT_URI);
+                Calendar beginTime = Calendar.getInstance();
+                beginTime.set(2019, 3, 24, 11, 00);
+                Calendar endTime = Calendar.getInstance();
+                endTime.set(2019, 3, 24, 16, 30);
+                calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
+                calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
+                calendarIntent.putExtra(CalendarContract.Events.TITLE, "Open day CMI HR");
+                calendarIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Secret dojo");
+                String titleCalenderIntent = "Choose your prefered calendar";
+                Intent calendarIntentwithChooser = Intent.createChooser(calendarIntent, titleCalenderIntent);
+                if (calendarIntentwithChooser.resolveActivity(getPackageManager()) != null) {
+                    startActivity(calendarIntentwithChooser);
                 }
             }
         });
