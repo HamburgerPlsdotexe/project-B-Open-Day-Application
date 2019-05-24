@@ -1,5 +1,7 @@
 package com.example.project_b_open_day_application;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -35,34 +37,54 @@ public class CoursesActivity extends Fragment implements View.OnClickListener {
 
         return rootView;
     }
-
-
-
+  
     public void onClick(View view) {
-        Fragment fragment = null;
         switch (view.getId()) {
             case R.id.informaticaOpleiding:
-                fragment = new InformaticaActivity();
-                replaceFragment(fragment);
+                Context context = view.getContext();
+                Intent intent = new Intent(context, com.example.project_b_open_day_application.ItemDetailActivity.class);
+                intent.putExtra("DesiredFragment", "informatica");
+                context.startActivity(intent);
                 break;
 
             case R.id.communicatieOpleiding:
-                fragment = new CommunicatieActivity();
-                replaceFragment(fragment);
+                context = view.getContext();
+                intent = new Intent(context, com.example.project_b_open_day_application.ItemDetailActivity.class);
+                intent.putExtra("DesiredFragment", "communicatie");
+                context.startActivity(intent);
                 break;
 
             case R.id.technischeinformaticaOpleiding:
-                fragment = new TechnischeinformaticaActivity();
-                replaceFragment(fragment);
+                context = view.getContext();
+                intent = new Intent(context, com.example.project_b_open_day_application.ItemDetailActivity.class);
+                intent.putExtra("DesiredFragment", "TI");
+                context.startActivity(intent);
                 break;
 
             case R.id.cmgtOpleiding:
-                fragment = new CmgtActivity();
-                replaceFragment(fragment);
+                context = view.getContext();
+                intent = new Intent(context, com.example.project_b_open_day_application.ItemDetailActivity.class);
+                intent.putExtra("DesiredFragment", "CMGT");
+                context.startActivity(intent);
                 break;
 
 
         }
+    }
+
+    public void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.content_frame, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        //you can set the title for your toolbar here for different fragments different titles
+        getActivity().setTitle("List of Courses");
+
     }
 
     public void replaceFragment(Fragment someFragment) {

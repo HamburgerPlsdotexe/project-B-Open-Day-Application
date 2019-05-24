@@ -62,6 +62,9 @@
     <string name="donderdag">Donderdag</string>
     <string name="vrijdag">Vrijdag</string>
     <string name="ExplanationLegend">A legend that explains the floorplans</string>
+    <string name="datum_od_14feb">14 februari</string>
+    <string name="datum_od_1apr">1 april</string>
+
     <string name="phoneNumber">010-7944400</string>
     <string name="CMIBuildingAdress">Wijnhaven 107 \n3011 WN Rotterdam</string>
     <string name="email_contact">studievoorlichting@hr.nl</string>
