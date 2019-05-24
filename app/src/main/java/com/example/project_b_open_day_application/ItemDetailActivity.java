@@ -87,17 +87,20 @@ public class ItemDetailActivity extends AppCompatActivity {
             String DesiredFragment = getIntent().getStringExtra("DesiredFragment");
             Fragment fragment = null;
             switch (DesiredFragment) {
-                case "informatica":
-                    fragment = new InformaticaActivity();
-                    break;
                 case "communicatie":
                     fragment = new CommunicatieActivity();
                     break;
-                case "TI":
-                    fragment = new TechnischeinformaticaActivity();
+                case "communicatieNmediaDesign":
+                    fragment = new CommunicatieNmediaDesign();
                     break;
-                case "CMGT":
+                case "creativeMediaNGameTechnology":
                     fragment = new CmgtActivity();
+                    break;
+                case "informatica":
+                    fragment = new InformaticaActivity();
+                    break;
+                case "technischeInformatica":
+                    fragment = new TechnischeinformaticaActivity();
                     break;
                 case "februari":
                     fragment = new FebruariFragment();

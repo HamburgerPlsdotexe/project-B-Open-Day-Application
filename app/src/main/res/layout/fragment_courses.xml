@@ -1,69 +1,268 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="491dp"
-        android:alpha=".7"
-        android:background="@android:color/background_light"
-        android:lineSpacingExtra="10sp"
-        android:scrollbars="vertical"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="15sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/cmgtOpleiding"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="98dp"
-        android:layout_marginLeft="98dp"
-        android:layout_marginTop="567dp"
-        android:text="CMGT" />
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/comm_card"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_margin="8dp">
 
-    <Button
-        android:id="@+id/informaticaOpleiding"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="98dp"
-        android:layout_marginLeft="98dp"
-        android:layout_marginTop="159dp"
-        android:layout_marginBottom="373dp"
-        android:text="Informatica" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dedede">
 
-    <Button
-        android:id="@+id/technischeinformaticaOpleiding"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="95dp"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="400dp"
-        android:text="Technische Informatica" />
+                <ImageView
+                    android:id="@+id/comm_card_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comm_card" />
 
-    <Button
-        android:id="@+id/communicatieOpleiding"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="98dp"
-        android:layout_marginLeft="98dp"
-        android:layout_marginTop="486dp"
-        android:text="Communicatie" />
+                <TextView
+                    android:id="@+id/comm_titl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/comm_card_img"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="@string/card_comm_titl"
+                    android:textColor="#222"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-</RelativeLayout>
+                <TextView
+                    android:id="@+id/comm_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/comm_titl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:maxLines="4"
+                    android:padding="8dp"
+                    android:text="@string/comm_text"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/comm_media_card"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/comm_card"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dedede">
+
+                <ImageView
+                    android:id="@+id/comm_media_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comm_med_des_img" />
+
+                <TextView
+                    android:id="@+id/comm_media_titl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/comm_media_img"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="@string/crea_med_titl"
+                    android:textColor="#222"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/comm_media_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/comm_media_titl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:maxLines="4"
+                    android:padding="8dp"
+                    android:text="@string/comm_media_text"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/crea_med_gam_des_card"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/comm_media_card"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dedede">
+
+                <ImageView
+                    android:id="@+id/crea_med_gam_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cmgt_img" />
+
+                <TextView
+                    android:id="@+id/crea_med_gam_titl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crea_med_gam_img"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="@string/crea_med_gam_titl"
+                    android:textColor="#222"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/crea_med_gam_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/crea_med_gam_titl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="@string/crea_med_gam_text"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/inf_card"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/crea_med_gam_des_card"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dedede">
+
+                <ImageView
+                    android:id="@+id/inf_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inf" />
+
+                <TextView
+                    android:id="@+id/inf_titl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inf_img"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="@string/informatica_titl"
+                    android:textColor="#222"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/inf_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/inf_titl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:maxLines="4"
+                    android:padding="8dp"
+                    android:text="@string/inf_text"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tinf_card"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_below="@+id/inf_card"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dedede">
+
+                <ImageView
+                    android:id="@+id/tinf_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tinf_img" />
+
+                <TextView
+                    android:id="@+id/tinf_titl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tinf_img"
+                    android:maxLines="3"
+                    android:padding="8dp"
+                    android:text="@string/tinf_titl"
+                    android:textColor="#222"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tinf_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_below="@+id/tinf_titl"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:maxLines="4"
+                    android:padding="8dp"
+                    android:text="@string/tinf_text"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
