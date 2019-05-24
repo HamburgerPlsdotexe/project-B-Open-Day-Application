@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+
 public class CoursesActivity extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
@@ -36,9 +37,7 @@ public class CoursesActivity extends Fragment implements View.OnClickListener {
 
         return rootView;
     }
-
-
-
+  
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.informaticaOpleiding:
@@ -85,5 +84,15 @@ public class CoursesActivity extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("List of Courses");
+
     }
+
+    public void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.content_frame, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+
 }
