@@ -99,6 +99,12 @@ public class ItemDetailActivity extends AppCompatActivity {
                 case "CMGT":
                     fragment = new CmgtActivity();
                     break;
+                case "februari":
+                    fragment = new FebruariFragment();
+                    break;
+                case "april":
+                    fragment = new AprilFragment();
+                    break;
             }
             if (fragment != null) {
                 FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
