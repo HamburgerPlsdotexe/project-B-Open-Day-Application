@@ -23,11 +23,11 @@ public class DatesActivity extends Fragment implements View.OnClickListener {
 
         View rootView = inflater.inflate(R.layout.fragment_dates, container, false);
 
-        Button informaticaBtn = (Button) rootView.findViewById(R.id.informaticaOpleiding);
-        Button technischeinformaticaBtn = (Button) rootView.findViewById(R.id.technischeinformaticaOpleiding);
+        Button febBtn = (Button) rootView.findViewById(R.id.feb14);
+        Button aprBtn = (Button) rootView.findViewById(R.id.apr1);
 
-        informaticaBtn.setOnClickListener(this);
-        technischeinformaticaBtn.setOnClickListener(this);
+        febBtn.setOnClickListener(this);
+        aprBtn.setOnClickListener(this);
 
         return rootView;
     }
