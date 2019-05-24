@@ -68,4 +68,14 @@
     <string name="phoneNumber">010-7944400</string>
     <string name="CMIBuildingAdress">Wijnhaven 107 \n3011 WN Rotterdam</string>
     <string name="email_contact">studievoorlichting@hr.nl</string>
+    <string name="card_comm_titl">Communicatie</string>
+    <string name="comm_text">Heb je een scherp oog en oor voor de verhalen van mensen en merken? Ben je creatief met tekst en beeld en gefascineerd door de wereld van media? Dan is de opleiding Communicatie iets voor jou!</string>
+    <string name="crea_med_titl"><![CDATA[Communicatie & Media Design]]></string>
+    <string name="comm_media_text">Bij ons ziet studeren er vaak anders uit. Als ontwerper zit je weinig in de schoolbanken op de traditionele manier. We werken samen met elkaar in de studio, voor echte opdrachtgevers.</string>
+    <string name="crea_med_gam_titl"><![CDATA[Creative Media & Game Design]]></string>
+    <string name="crea_med_gam_text">Creatieve technologen bedenken en ontwikkelen innovatieve digitale producten, waarbij de gebruiker centraal staat.</string>
+    <string name="informatica_titl">Informatica</string>
+    <string name="inf_text">We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren.</string>
+    <string name="tinf_titl">Technische Informatica</string>
+    <string name="tinf_text">Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren.</string>
 </resources>
