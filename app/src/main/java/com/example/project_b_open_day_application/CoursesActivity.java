@@ -72,13 +72,6 @@ public class CoursesActivity extends Fragment implements View.OnClickListener {
         }
     }
 
-    public void replaceFragment(Fragment someFragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.content_frame, someFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
-
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
