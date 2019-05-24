@@ -1,3 +1,68 @@
 <resources>
+    <!--Basic String used through the whole app-->
     <string name="app_name">project-B-Open-Day-Application</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_Courses">Opleidingen CMI</string>
+    <string name="nav_Dates">Datums Open-dagen</string>
+    <string name="nav_Contact">Contact</string>
+    <string name="nav_ContactForm">Vragenformulier</string>
+    <string name="nav_BuildingPlan">Plattegrond</string>
+    <string name="nav_StartScreen">Startscherm</string>
+    <string name="banner">banner for each page</string>
+
+    <string name="tutorial">Welkom bij de HR open dag app! Hier kan je informatie vinden over de instituut CMI van Hogeschool Rotterdam</string>
+
+    <!--strings used only in BuildingPlan Fragment-->
+    <string name="button_refreshPDF">Refresh PDF</string>
+    <string name="array_buildingText">Kies hier het gebouw</string>
+    <string-array name="buildingArray">
+        <item name="99">WN</item>
+        <item name="103">WD</item>
+        <item name="107">H</item>
+    </string-array>
+
+    <string name="array_floorText">Kies hier de gewenste verdieping </string>
+    <string-array name="floorArray">
+        <item name="BG">Begaande grond</item>
+        <item name="1e">1ste verdieping</item>
+        <item name="2e">2de verdieping</item>
+        <item name="3e">3de verdieping</item>
+        <item name="4e">4de verdieping</item>
+        <item name="5e">5de verdieping</item>
+    </string-array>
+
+    <!--Strings used only in ContactForm Fragment-->
+    <string name="naam_voor_formulier">Naam</string>
+    <string name="emailadressgebruiken">Email</string>
+    <string name="onderwerp">Onderwerp</string>
+    <string name="bericht_contactformulier">Bericht</string>
+    <string name="titelvragenformulier">Vragen formulier</string>
+    <string name="uitlegvragenformulier">Als je nog vragen heb, kan je deze op deze pagina stellen. Vul de gegevens in en verzend je bericht, we zullen je binnen 3 werkdagen bereiken.</string>
+    <string name="send_button_description">Verzend</string>
+
+    <!--Strings used only in Contact Fragment-->
+    <string name="warning_tijden">Let op: tijdens vakantieperiodes kunnen aangepaste openingstijden gelden.</string>
+    <string name="contact_informatie">Contact informatie</string>
+    <string name="openingstijden">Openingstijden</string>
+    <string name="time_friday">7.30 - 17.30 uur</string>
+    <string name="time_thursday">7.30 - 19.30 uur</string>
+    <string name="time_wednesday">7.30 - 22.00 uur</string>
+    <string name="time_tuesday">7.30 - 21.00 uur</string>
+    <string name="time_monday">7.30 - 22.00 uur</string>
+    <string name="routebeschrijving">Routebeschrijving</string>
+    <string name="maandag">Maandag</string>
+    <string name="dinsdag">Dinsdag</string>
+    <string name="woensdag">Woensdag</string>
+    <string name="donderdag">Donderdag</string>
+    <string name="vrijdag">Vrijdag</string>
+    <string name="ExplanationLegend">A legend that explains the floorplans</string>
+    <string name="datum_od_14feb">14 februari</string>
+    <string name="datum_od_1apr">1 april</string>
 </resources>
+
