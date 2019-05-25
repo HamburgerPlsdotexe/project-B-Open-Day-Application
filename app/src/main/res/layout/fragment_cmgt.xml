@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:alpha=".7"
-        android:background="@android:color/background_light"
-        android:lineSpacingExtra="10sp"
-        android:scrollbars="vertical"
-        android:text="HARDCODED TEXT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="15sp"  />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/comm_med_gam_img2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/crea_med_gam_img2" />
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_below="@id/comm_med_gam_img2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Als CMGT'er ben je een developer (programmeur) van interactieve digitale producten: je ontwikkelt web- en mobiele applicaties en je kent de basis van het ontwikkelen van games. De grenzen tussen deze digitale producten en de fysieke wereld vervagen echter steeds meer en steeds sneller. Je wordt daarom niet opgeleid als specialist in 1 specifieke programmeertaal of platform maar als een flexibele programmeur die zichzelf snel de mogelijkheden van een nieuwe taal of een nieuw platform (smartphone, game console, Internet of Things) eigen kan maken. Met als doel interactieve oplossingen voor klanten te bedenken en ontwikkelen die platform en programmeertaal ontstijgen.
+Je differentieert je van andere programmeurs door je mate van creativiteit en je kennis en gevoel voor interactie tussen apparaten en mensen (gebruikers).
+&#xA;&#xA;Een Rotterdamse CMGT'er onderscheidt zich van andere programmeurs door de mate van creativiteit en de ontwerpgerichte benadering en de mate van kennis en gevoel voor interactie tussen apparaten en mensen (gebruikers). Bij alles wat je maakt staat de persoon die het gaat gebruiken centraal. Daarom heb je een onderzoekende houding en wil je gebruikers leren kennen en ze zo intensief mogelijk betrekken bij het maken van het product. De werkzaamheden en de mogelijkheden voor deze creatieve technoloog zijn aan verandering onderhevig omdat er veel ontwikkelingen in het vakgebied plaatsvinden. Nu ligt in de opleiding de nadruk op web- en mobiele technologieën. Game technologieën vormen een kleiner onderdeel.
+&#xA;&#xA;CMGT-studenten werken op bepaalde momenten samen met studenten van de opleiding Communication and Multimedia Design. Deze samenwerking is belangrijk omdat bij het ontwikkelen van interactieve oplossingen de samenwerking met andere creatieve specialisten, zoals ontwerpers en strategen, leidt tot een hogere eindkwaliteit.
+&#xA;&#xA;Na deze studie gaan CMGT'ers als programmeur aan de slag bij internetbureaus of andere bureaus in de creatieve sector (reclame, marketing, ontwerp, innovatie). Een deel start een eigen onderneming of gaat werken als freelancer. Web Developer en Mobile Developer zijn dan ook bij uitstek de beroepen die veel afgestudeerden op dit moment uitoefenen na afloop van de studie."/>
+
+    </RelativeLayout>
+</ScrollView>

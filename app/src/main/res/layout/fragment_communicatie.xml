@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/comm_img2"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/comm_img2" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/comm_img2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:alpha=".7"
-        android:background="@android:color/background_light"
-        android:lineSpacingExtra="10sp"
-        android:scrollbars="vertical"
-        android:text="HARDCODED TEXT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="15sp"  />
+        android:text="Organisaties staan voor grote uitdagingen. Een nieuw product promoten, samenwerken met klanten, medewerkers en inwoners, laten zien dat je goede dingen doet voor de samenleving. Hoe doe je dat in een tijd van kritische journalisten, vloggers, maatschappelijke discussies en elkaar snel opvolgende trends? Onze opleiding Communicatie leidt jou in vier jaar op tot wat we - met trots - een smart connector noemen.&#xA;&#xA;Een professional die voor slimme verbindingen zorgt.  Met inzet van bijvoorbeeld social tools, storytelling, big data en co-creatie. Je ontwikkelt creatieve concepten zoals mediacampagnes, events en verhalenplatforms. Op basis van goed onderzoek, theorie en strategie en natuurlijk jouw eigen verrassende ideeën.Vanaf jaar 1 werk je samen met opdrachtgevers uit de praktijk. Van Rotterdamse ondernemers, start-ups en bureaus tot landelijke organisaties. We werken met innovatieve methodes. In teamverband is dat bijvoorbeeld de scrum methodiek: waarbij je flexibel en intensief samenwerkt met een opdrachtgever. &#xA;&#xA;Geen les, cursus of project is hetzelfde. We stemmen de werkvorm af op wat je leert: webinars, TED Talks, content cafés, meet-ups, gastcolleges en bedrijfsbezoeken. De opleiding Communicatie leert je om als smart connector mensen te raken, te verbinden en te bewegen."/>
 
 </RelativeLayout>
+</ScrollView>

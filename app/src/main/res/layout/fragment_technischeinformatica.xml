@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:alpha=".7"
-        android:background="@android:color/background_light"
-        android:lineSpacingExtra="10sp"
-        android:scrollbars="vertical"
-        android:text="HARDCODED TEXT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textSize="15sp"  />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/inf_img2"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tinf_img2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inf_img2"
+            android:layout_margin="8dp"
+            android:text="In het dagelijks leven zijn we steeds meer afhankelijk geworden van ICT-systemen. Reizen in het OV kan alleen nog met de OV-chipkaart, je bagage komt op Schiphol automatisch op de juiste plek, energiemeters worden ‘slim’ en medische ingrepen worden soms door een apparaat in plaats van een chirurg gedaan. &#xA;&#xA;Allemaal voorbeelden waarbij hard- en software samenkomen in een enkel systeem.
+Als technisch informaticus draag je bij aan het ontwikkelen, beveiligen en in de lucht houden van deze systemen. Gedurende de studie maak je kennis met de technische aspecten van ICT. Je leert te programmeren in diverse programmeertalen, waaronder de zogenaamde 'lagere' talen voor hardware toepassingen. Hiermee leer je oplossingen ontwikkelen voor verschillende apparaten, robots en andere moderne systemen. &#xA;&#xA;Je bent een all-rounder op alle disciplines, maar specialiseert je ook in een of meerdere aspecten in het werkveld. Denk daarbij aan Machine Learning, Augmented Reality, Automated Systems en uiteraard de met IoT (Internet of Things) nauw verbonden met Embedded Systems."/>
+    </RelativeLayout>
+</ScrollView>

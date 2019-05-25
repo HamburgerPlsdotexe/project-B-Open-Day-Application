@@ -28,11 +28,7 @@ public class ContactFormActivity extends Fragment implements View.OnClickListene
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
         View v = inflater.inflate(R.layout.fragment_contact_form, container, false);
-
         sendBtn = v.findViewById(R.id.sendmessage);
-
-
-
         sendBtn.setOnClickListener(this);
         return v;
     }
@@ -55,7 +51,7 @@ public class ContactFormActivity extends Fragment implements View.OnClickListene
         }
     }
 
-    public void onClick(View view){
+    public void onClick(View view) {
         EditText subject = getActivity().findViewById(R.id.Inhoud_onderwerpveld);
         EditText name = getActivity().findViewById(R.id.Inhoud_naamveld);
         EditText email = getActivity().findViewById(R.id.Inhoud_emailveld);
