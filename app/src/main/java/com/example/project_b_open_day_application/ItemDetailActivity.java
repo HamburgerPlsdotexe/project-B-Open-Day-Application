@@ -94,7 +94,7 @@ public class ItemDetailActivity extends AppCompatActivity {
                     fragment = new CommunicatieNmediaDesign();
                     break;
                 case "creativeMediaNGameTechnology":
-                    fragment = new CmgtActivity();
+                    fragment = new CreativeMediaAndGameTechnologies();
                     break;
                 case "informatica":
                     fragment = new InformaticaActivity();
