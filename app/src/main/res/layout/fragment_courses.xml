@@ -246,7 +246,7 @@
                     android:layout_alignParentTop="true"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tinf_img" />
+                    android:src="@drawable/technische_informatica" />
 
                 <TextView
                     android:id="@+id/tinf_titl"

@@ -47,9 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|start"
         android:layout_margin="@dimen/fab_margin"
+        android:gravity="bottom"
         app:backgroundTint="#F44336"
-        app:layout_anchor="@+id/item_detail_container"
-        app:layout_anchorGravity="start|center"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="end|bottom"
         app:rippleColor="#FFFFFF"
         app:srcCompat="@android:drawable/ic_menu_share" />
 
@@ -61,7 +62,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:tint="#00FF2222"
         app:backgroundTint="#F44336"
-        app:layout_anchor="@+id/item_detail_container"
+        app:layout_anchor="@+id/app_bar"
         app:layout_anchorGravity="end|center"
         app:rippleColor="#FFFFFF"
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
