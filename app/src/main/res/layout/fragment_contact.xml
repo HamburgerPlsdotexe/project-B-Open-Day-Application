@@ -233,7 +233,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/route"
-        android:text="Met het openbaar vervoer:\nBij metro Beurs uitstappen, oversteken naar het Maritiem Museum. Eenmaal daar, achter het museum bevind zich het standbeeld De Verwoeste Stad. Loop nu langs het kanaal. De ingang staat tegenover de fietsenrekken."
+        android:text="@string/uitleg_vervoer"
         android:textSize="14sp"
         android:textColor="@android:color/black"
         android:layout_marginStart="8dp" />

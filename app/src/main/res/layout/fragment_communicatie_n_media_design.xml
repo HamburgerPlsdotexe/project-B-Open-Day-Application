@@ -15,14 +15,39 @@
             android:src="@drawable/comm_med_img2" />
 
         <TextView
+            android:id="@+id/comm_med_frag_text1"
             android:layout_margin="8dp"
             android:layout_below="@id/comm_med_img2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Je ontwerpt betekenisvolle interactieve producten en diensten voor de mens: van website, app, interactieve installatie, tot volledige experience. Voordat je begint met een ontwerp doe je uitgebreid onderzoek naar de gebruikersbehoeften en naar de omgeving waarin jouw interactieve ontwerp gebruikt wordt. &#xA;&#xA;Je checkt voortdurend met de gebruiker voor wie je aan het ontwerpen bent en gaat deze partijen ook op locatie betrekken. Ontwerpen is immers: prototypes maken, testen, falen, herontwerpen, testen, bijstellen etc. Je bent bezig met schetsen, onderzoeken, bouwen of onderzoek buiten de deur.
-Je leert werken vanuit de belangen en beleving van gebruikers en opdrachtgevers. Een actieve houding is voorwaarde voor het ontwerpproces bij Communication and Multimedia Design. Evenals een gezonde dosis nieuwsgierigheid, lef en zelfstandigheid om werk van hoge kwaliteit op te leveren. Daarnaast verwachten we dat je kritisch kunt kijken naar je werk en handelen.
-&#xA;&#xA;De eerstejaars studenten richten zich nu op ouderen die in meer of mindere mate fysieke of psychische gezondheidsproblemen ervaren en mantelzorg nodig hebben. De opdrachtgever is op zoek naar slimme, nieuwe technologische toepassingen die ouderen, met behulp van mantelzorgers, langer thuis kunnen laten wonen.
-&#xA;&#xA;De opleiding CMD daagt je uit jouw kennis, creativiteit en ontwerptalent in te zetten voor interactieve producten en diensten, die het leven en de omgeving van gebruikers veraangenamen of zelfs verbeteren."/>
+            android:text="@string/comm_med_frag_text1"
+            />
+
+        <TextView
+            android:id="@+id/comm_med_frag_text2"
+            android:layout_margin="8dp"
+            android:layout_below="@id/comm_med_frag_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comm_med_frag_text2"
+            />
+
+        <TextView
+            android:id="@+id/comm_med_frag_text3"
+            android:layout_margin="8dp"
+            android:layout_below="@id/comm_med_frag_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comm_med_frag_text3"
+            />
+
+        <TextView
+            android:id="@+id/comm_med_frag_text4"
+            android:layout_margin="8dp"
+            android:layout_below="@id/comm_med_frag_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comm_med_frag_text4"/>
 
     </RelativeLayout>
 </ScrollView>
