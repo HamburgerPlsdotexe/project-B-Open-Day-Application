@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,39 +24,32 @@ public class DatesActivity extends Fragment implements View.OnClickListener {
 
         View rootView = inflater.inflate(R.layout.fragment_dates, container, false);
 
-        Button febBtn = (Button) rootView.findViewById(R.id.feb14);
-        Button aprBtn = (Button) rootView.findViewById(R.id.apr1);
+        CardView aprCard = rootView.findViewById(R.id.apr_card);
+        CardView meiCard = rootView.findViewById(R.id.mei_card);
 
-        febBtn.setOnClickListener(this);
-        aprBtn.setOnClickListener(this);
+        aprCard.setOnClickListener(this);
+        meiCard.setOnClickListener(this);
 
         return rootView;
     }
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.feb14:
+            case R.id.apr_card:
                 Context context = view.getContext();
                 Intent intent = new Intent(context, com.example.project_b_open_day_application.ItemDetailActivity.class);
-                intent.putExtra("DesiredFragment", "februari");
+                intent.putExtra("DesiredFragment", "April");
                 context.startActivity(intent);
                 break;
 
-            case R.id.apr1:
+            case R.id.mei_card:
                 context = view.getContext();
                 intent = new Intent(context, com.example.project_b_open_day_application.ItemDetailActivity.class);
-                intent.putExtra("DesiredFragment", "april");
+                intent.putExtra("DesiredFragment", "Mei");
                 context.startActivity(intent);
                 break;
 
         }
-    }
-
-    public void replaceFragment(Fragment someFragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.content_frame, someFragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
     }
 
     @Override

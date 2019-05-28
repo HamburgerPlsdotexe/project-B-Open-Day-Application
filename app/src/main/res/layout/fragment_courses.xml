@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/comm_card"
+            android:id="@+id/feb_card"
             android:layout_width="match_parent"
             android:layout_height="380dp"
             android:layout_marginTop="48dp"
@@ -63,7 +63,7 @@
             android:id="@+id/comm_media_card"
             android:layout_width="match_parent"
             android:layout_height="380dp"
-            android:layout_below="@+id/comm_card"
+            android:layout_below="@+id/feb_card"
             android:layout_margin="8dp"
             android:clickable="true"
             android:focusable="true"

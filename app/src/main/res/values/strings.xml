@@ -78,6 +78,12 @@
     <string name="inf_text">We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren.</string>
     <string name="tinf_titl">Technische Informatica</string>
     <string name="tinf_text">Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren.</string>
+    
+    <string name="apr_header">Opendag 1 april</string>
+    <string name="mei_header">Opendag 14 Mei</string>
+    <string name="date_card_apr">Hier kan je informatie vinden over de programma! Kom een kijkje nemen bij onze opendag op 1 april!</string>
+    <string name="date_card_may">Hier kan je informatie vinden over de programma! Kom een kijkje nemen bij onze opendag op 14 mei!</string>
+
     <string name="comm_frag_text1">Organisaties staan voor grote uitdagingen. Een nieuw product promoten, samenwerken met klanten, medewerkers en inwoners, laten zien dat je goede dingen doet voor de samenleving. Hoe doe je dat in een tijd van kritische journalisten, vloggers, maatschappelijke discussies en elkaar snel opvolgende trends? Onze opleiding Communicatie leidt jou in vier jaar op tot wat we - met trots - een smart connector noemen.</string>
     <string name="comm_frag_text2">Een professional die voor slimme verbindingen zorgt. Met inzet van bijvoorbeeld social tools, storytelling, big data en co-creatie. Je ontwikkelt creatieve concepten zoals mediacampagnes, events en verhalenplatforms. Op basis van goed onderzoek, theorie en strategie en natuurlijk jouw eigen verrassende ideeën.Vanaf jaar 1 werk je samen met opdrachtgevers uit de praktijk. Van Rotterdamse ondernemers, start-ups en bureaus tot landelijke organisaties. We werken met innovatieve methodes. In teamverband is dat bijvoorbeeld de scrum methodiek: waarbij je flexibel en intensief samenwerkt met een opdrachtgever.</string>
     <string name="comm_frag_text3">Geen les, cursus of project is hetzelfde. We stemmen de werkvorm af op wat je leert: webinars, TED Talks, content cafés, meet-ups, gastcolleges en bedrijfsbezoeken. De opleiding Communicatie leert je om als smart connector mensen te raken, te verbinden en te bewegen.</string>
