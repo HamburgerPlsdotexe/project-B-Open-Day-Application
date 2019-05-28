@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 
-import com.example.project_b_open_day_application.Courses.CmgtActivity;
 import com.example.project_b_open_day_application.Courses.CommunicatieActivity;
 import com.example.project_b_open_day_application.Courses.InformaticaActivity;
 import com.example.project_b_open_day_application.Courses.TechnischeinformaticaActivity;
@@ -102,11 +101,11 @@ public class ItemDetailActivity extends AppCompatActivity {
                 case "technischeInformatica":
                     fragment = new TechnischeinformaticaActivity();
                     break;
-                case "februari":
-                    fragment = new FebruariFragment();
-                    break;
-                case "april":
+                case "April":
                     fragment = new AprilFragment();
+                    break;
+                case "Mei":
+                    fragment = new MeiFragment();
                     break;
             }
             if (fragment != null) {

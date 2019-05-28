@@ -1,6 +1,5 @@
 package com.example.project_b_open_day_application;
 
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.project_b_open_day_application.R;
+
+import java.util.Objects;
 
 
 public class AprilFragment extends Fragment {

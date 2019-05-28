@@ -10,8 +10,8 @@
             android:id="@+id/mei_img"
             android:layout_width="match_parent"
             android:layout_height="258dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/apr_img" />
+            android:scaleType="fitXY"
+            android:src="@drawable/mei_img" />
 
         <TextView
             android:id="@+id/mei_header"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/mei_img"
             android:layout_margin="8dp"
-            android:text="@string/apr_header"
+            android:text="@string/mei_header"
             android:textColor="#000"
             android:textSize="24dp" />
 
