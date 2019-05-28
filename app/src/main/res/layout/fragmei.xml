@@ -10,7 +10,7 @@
             android:id="@+id/mei_img"
             android:layout_width="match_parent"
             android:layout_height="258dp"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:src="@drawable/mei_img" />
 
         <TextView
@@ -24,7 +24,7 @@
             android:textSize="24dp" />
 
         <RelativeLayout
-            android:id="@+id/mei_body"
+            android:id="@+id/apr_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/mei_header">
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="Activiteit"
+                android:text="@string/activiteit"
                 android:textColor="@color/almostPink"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="8dp"
-                android:text="Tijdstip"
+                android:text="@string/tijdstip"
                 android:textColor="@color/almostPink"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="8dp"
-                android:text="Plaats"
+                android:text="@string/plaats"
                 android:textColor="@color/almostPink"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -67,37 +67,84 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/activiteit"
                 android:layout_marginLeft="8dp"
-                android:text="klassieke\nvoorlichting"
+                android:text="@string/klassieke"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/voorlichting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/klassieke"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/almostPink"
+                android:text="@string/voorlichting"
+                android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/duur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/klassieke"
-                android:layout_margin="8dp"
-                android:text="Duur: Ca. 45 min."
+                android:layout_below="@id/voorlichting"
+                android:layout_marginLeft="8dp"
+                android:text="@string/duur_ca_45_min"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/tijden"
+                android:id="@+id/tijden_1_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/Tijdstip"
                 android:layout_centerHorizontal="true"
-                android:text="10.30 uur\n11.30 uur\n12.30 uur"
+                android:text="@string/_10_30_uur"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijden_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tijden_1_0"
+                android:layout_centerHorizontal="true"
+                android:text="@string/_11_30_uur"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tijden_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tijden_1_1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/_12_30_uur"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lokaal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Tijdstip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:text="@string/lokaal_h_4_308"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/Tijdstip"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:text="Lokaal H.4.308\n (4e etage)"
+                android:layout_below="@+id/lokaal"
+                android:layout_marginRight="8dp"
+                android:text="@string/_4e_etage"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -114,8 +161,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_1"
-                android:layout_margin="8dp"
-                android:text="Workshops"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/workshops"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
 
@@ -125,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/workshops"
                 android:layout_marginStart="8dp"
-                android:text="Duur: 60 min"
+                android:text="@string/duur_60_min"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -133,20 +181,30 @@
                 android:id="@+id/tijd_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/workshops"
-                android:layout_marginStart="12dp"
+                android:layout_below="@id/div_1"
+                android:layout_marginTop="8dp"
                 android:layout_centerHorizontal="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijd_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tijd_2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/_10_00_tot_14_00_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/workshops"
+                android:layout_below="@id/div_1"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="8dp"
-                android:text="Studielandschap"
+                android:text="@string/studielandschap"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -154,7 +212,7 @@
                 android:id="@+id/div_2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@id/tijd_2"
+                android:layout_below="@id/duur_2"
                 android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider" />
 
@@ -164,20 +222,46 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_2"
                 android:layout_margin="8dp"
-                android:text="Voorbeelden van \nprojecten"
+                android:text="@string/voorbeelden_van"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
+
             <TextView
-                android:id="@+id/tijd_3"
+                android:id="@+id/projecten_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/projecten"
+                android:layout_alignStart="@+id/div_3"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/projecten"
+                android:textColor="@color/almostPink"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tijd_3_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_2"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="9dp"
                 android:layout_centerHorizontal="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijd_3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tijd_3_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:text="@string/_10_00_tot_14_00_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -187,14 +271,14 @@
                 android:layout_below="@id/div_2"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="8dp"
-                android:text="Studielandschap"
+                android:text="@string/studielandschap"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
             <View
                 android:id="@+id/div_3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@id/projecten"
+                android:layout_below="@id/projecten_2"
                 android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider" />
 
@@ -204,7 +288,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_3"
                 android:layout_margin="8dp"
-                android:text="Voorlichtingsstand"
+                android:text="@string/voorlichtingsstand"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
 
@@ -213,12 +297,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_3"
-                android:layout_marginBottom="8dp"
-                android:paddingBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginStart="12dp"
                 android:layout_centerHorizontal="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijd_4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tijd_4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:text="@string/_10_00_tot_14_00_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -228,7 +320,7 @@
                 android:layout_below="@id/div_3"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="8dp"
-                android:text="Studielandschap"
+                android:text="@string/studielandschap"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -246,7 +338,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_4"
                 android:layout_margin="8dp"
-                android:text="studievoorlichting"
+                android:text="@string/studievoorlichting"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
 
@@ -256,11 +348,20 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_4"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:paddingBottom="8dp"
-                android:layout_marginStart="12dp"
                 android:layout_centerHorizontal="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijd_5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tijd_5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/_10_00_tot_14_00_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -270,7 +371,7 @@
                 android:layout_below="@id/div_4"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="8dp"
-                android:text="Studielandschap"
+                android:text="@string/studielandschap"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -288,7 +389,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_5"
                 android:layout_margin="8dp"
-                android:text="Hulp bij Studiekeuze"
+                android:text="@string/hulp_bij_studiekeuze"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
 
@@ -298,20 +399,44 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_5"
                 android:layout_marginTop="8dp"
-                android:paddingBottom="8dp"
-                android:layout_marginStart="12dp"
                 android:layout_centerHorizontal="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/tijd_6_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tijd_6"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/_10_00_tot_14_00_uur"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/stand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_5"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:text="Bij de stand van \nStudievoorlichting"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/bij_de_stand_van"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/stand_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stand"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/studievoorlichting"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -324,36 +449,79 @@
                 android:background="?android:attr/listDivider" />
 
             <TextView
-                android:id="@+id/examens"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/div_6"
-                android:layout_margin="8dp"
-                android:text=" Toelatingsexamens en\n Ondersteunend\n Onderwijs"
-                android:textColor="@color/almostPink"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/tijd_7"
+                android:id="@+id/examens_0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_6"
                 android:layout_marginTop="8dp"
-                android:paddingBottom="8dp"
-                android:layout_marginStart="12dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/toelatingsexamens_en"
+                android:textColor="@color/almostPink"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/examens_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/examens_0"
+                android:text="@string/ondersteunend"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/almostPink"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/examens_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/examens_1"
+                android:text="@string/onderwijs"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/almostPink"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijd_5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_6"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="9dp"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/tijd_5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tijd_5_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:text="@string/_10_00_tot_14_00_uur"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/stand_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_6"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:text="Bij de stand van \nexaminering"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/bij_de_stand_van"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/stand_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stand_3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:text="@string/examinering"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -361,7 +529,7 @@
                 android:id="@+id/div_7"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@id/examens"
+                android:layout_below="@id/examens_2"
                 android:layout_marginTop="8dp"
                 android:background="?android:attr/listDivider" />
 
@@ -371,7 +539,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_7"
                 android:layout_margin="8dp"
-                android:text="Studenten Service Center"
+                android:text="@string/studenten_service_center"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
 
@@ -381,10 +549,20 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_7"
                 android:layout_marginTop="8dp"
-                android:paddingBottom="8dp"
-                android:layout_marginStart="12dp"
                 android:layout_centerHorizontal="true"
-                android:text="Doorlopend \n10.00 tot 14.00 uur"
+                android:text="@string/doorlopend"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tijd_8_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tijd_8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/_10_00_tot_14_00_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -393,8 +571,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_7"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:text="Begane grond"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/begane_grond"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
@@ -411,8 +590,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_8"
-                android:layout_margin="8dp"
-                android:text="Oudervoorlichting"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/oudervoorlichting"
                 android:textColor="@color/almostPink"
                 android:textSize="12sp" />
 
@@ -422,31 +602,40 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_8"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
-                android:text="10.15 uur\n11.45 uur"
+                android:layout_marginTop="8dp"
+                android:text="@string/_10_15_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
+
             <TextView
-                android:id="@+id/duur_3"
+                android:id="@+id/tijd_9_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/oudervoorlichting"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="12dp"
-                android:text="Duur: 60 min"
+                android:layout_below="@id/tijd_9"
+                android:layout_centerHorizontal="true"
+                android:text="@string/_11_45_uur"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/div_8"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="8dp"
-                android:text="Studielandschap"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/studielandschap"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
+            <View
+                android:id="@+id/div_9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/tijd_9_1"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider" />
 
 
 
