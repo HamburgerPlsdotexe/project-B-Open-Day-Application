@@ -1,25 +1,25 @@
 <resources>
     <!--Basic String used through the whole app-->
     <string name="app_name">project-B-Open-Day-Application</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
     <string name="nav_Courses">Opleidingen CMI</string>
-    <string name="nav_Dates">Datums Open-dagen</string>
-    <string name="nav_Contact">Contact</string>
+    <string name="nav_Dates">Datums Open dagen</string>
+    <string name="nav_Contact" translatable="false">Contact</string>
     <string name="nav_ContactForm">Vragenformulier</string>
     <string name="nav_BuildingPlan">Plattegrond</string>
     <string name="nav_StartScreen">Startscherm</string>
-    <string name="banner">banner for each page</string>
+    <string name="banner">Banner voor elk pagina</string>
 
     <string name="tutorial">Welkom bij de HR open dag app! Hier kan je informatie vinden over de instituut CMI van Hogeschool Rotterdam</string>
 
     <!--strings used only in BuildingPlan Fragment-->
-    <string name="button_refreshPDF">Refresh PDF</string>
+    <string name="button_refreshPDF">Herlaad PDF</string>
     <string name="array_buildingText">Kies hier het gebouw</string>
     <string-array name="buildingArray">
         <item name="99">WN</item>
@@ -39,7 +39,7 @@
 
     <!--Strings used only in ContactForm Fragment-->
     <string name="naam_voor_formulier">Naam</string>
-    <string name="emailadressgebruiken">Email</string>
+    <string name="emailadressgebruiken" translatable="false">Email</string>
     <string name="onderwerp">Onderwerp</string>
     <string name="bericht_contactformulier">Bericht</string>
     <string name="titelvragenformulier">Vragen formulier</string>
@@ -61,21 +61,40 @@
     <string name="woensdag">Woensdag</string>
     <string name="donderdag">Donderdag</string>
     <string name="vrijdag">Vrijdag</string>
-    <string name="ExplanationLegend">A legend that explains the floorplans</string>
+    <string name="ExplanationLegend">Een legenda dat de plattegrond uitlegt.</string>
     <string name="datum_od_14feb">14 februari</string>
     <string name="datum_od_1apr">1 april</string>
 
-    <string name="phoneNumber">010-7944400</string>
-    <string name="CMIBuildingAdress">Wijnhaven 107 \n3011 WN Rotterdam</string>
-    <string name="email_contact">studievoorlichting@hr.nl</string>
+    <string name="phoneNumber" translatable="false">010-7944400</string>
+    <string name="CMIBuildingAdress" translatable="false">Wijnhaven 107 \n3011 WN Rotterdam</string>
+    <string name="email_contact" translatable="false">studievoorlichting@hr.nl</string>
     <string name="card_comm_titl">Communicatie</string>
     <string name="comm_text">Heb je een scherp oog en oor voor de verhalen van mensen en merken? Ben je creatief met tekst en beeld en gefascineerd door de wereld van media? Dan is de opleiding Communicatie iets voor jou!</string>
-    <string name="crea_med_titl"><![CDATA[Communicatie & Media Design]]></string>
+    <string name="crea_med_titl" translatable="false"><![CDATA[Communicatie & Media Design]]></string>
     <string name="comm_media_text">Bij ons ziet studeren er vaak anders uit. Als ontwerper zit je weinig in de schoolbanken op de traditionele manier. We werken samen met elkaar in de studio, voor echte opdrachtgevers.</string>
-    <string name="crea_med_gam_titl"><![CDATA[Creative Media & Game Design]]></string>
+    <string name="crea_med_gam_titl" translatable="false"><![CDATA[Creative Media & Game Design]]></string>
     <string name="crea_med_gam_text">Creatieve technologen bedenken en ontwikkelen innovatieve digitale producten, waarbij de gebruiker centraal staat.</string>
     <string name="informatica_titl">Informatica</string>
     <string name="inf_text">We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren.</string>
     <string name="tinf_titl">Technische Informatica</string>
     <string name="tinf_text">Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren.</string>
+    <string name="comm_frag_text1">Organisaties staan voor grote uitdagingen. Een nieuw product promoten, samenwerken met klanten, medewerkers en inwoners, laten zien dat je goede dingen doet voor de samenleving. Hoe doe je dat in een tijd van kritische journalisten, vloggers, maatschappelijke discussies en elkaar snel opvolgende trends? Onze opleiding Communicatie leidt jou in vier jaar op tot wat we - met trots - een smart connector noemen.</string>
+    <string name="comm_frag_text2">Een professional die voor slimme verbindingen zorgt. Met inzet van bijvoorbeeld social tools, storytelling, big data en co-creatie. Je ontwikkelt creatieve concepten zoals mediacampagnes, events en verhalenplatforms. Op basis van goed onderzoek, theorie en strategie en natuurlijk jouw eigen verrassende ideeën.Vanaf jaar 1 werk je samen met opdrachtgevers uit de praktijk. Van Rotterdamse ondernemers, start-ups en bureaus tot landelijke organisaties. We werken met innovatieve methodes. In teamverband is dat bijvoorbeeld de scrum methodiek: waarbij je flexibel en intensief samenwerkt met een opdrachtgever.</string>
+    <string name="comm_frag_text3">Geen les, cursus of project is hetzelfde. We stemmen de werkvorm af op wat je leert: webinars, TED Talks, content cafés, meet-ups, gastcolleges en bedrijfsbezoeken. De opleiding Communicatie leert je om als smart connector mensen te raken, te verbinden en te bewegen.</string>
+    <string name="comm_med_frag_text1">Je ontwerpt betekenisvolle interactieve producten en diensten voor de mens: van website, app, interactieve installatie, tot volledige experience. Voordat je begint met een ontwerp doe je uitgebreid onderzoek naar de gebruikersbehoeften en naar de omgeving waarin jouw interactieve ontwerp gebruikt wordt.</string>
+    <string name="comm_med_frag_text2">Je checkt voortdurend met de gebruiker voor wie je aan het ontwerpen bent en gaat deze partijen ook op locatie betrekken. Ontwerpen is immers: prototypes maken, testen, falen, herontwerpen, testen, bijstellen etc. Je bent bezig met schetsen, onderzoeken, bouwen of onderzoek buiten de deur. Je leert werken vanuit de belangen en beleving van gebruikers en opdrachtgevers. Een actieve houding is voorwaarde voor het ontwerpproces bij Communication and Multimedia Design. Evenals een gezonde dosis nieuwsgierigheid, lef en zelfstandigheid om werk van hoge kwaliteit op te leveren. Daarnaast verwachten we dat je kritisch kunt kijken naar je werk en handelen.</string>
+    <string name="comm_med_frag_text3">De eerstejaars studenten richten zich nu op ouderen die in meer of mindere mate fysieke of psychische gezondheidsproblemen ervaren en mantelzorg nodig hebben. De opdrachtgever is op zoek naar slimme, nieuwe technologische toepassingen die ouderen, met behulp van mantelzorgers, langer thuis kunnen laten wonen.</string>
+    <string name="comm_med_frag_text4">De opleiding CMD daagt je uit jouw kennis, creativiteit en ontwerptalent in te zetten voor interactieve producten en diensten, die het leven en de omgeving van gebruikers veraangenamen of zelfs verbeteren.</string>
+    <string name="comm_med_gam_frag_text1">Als CMGT\'er ben je een developer (programmeur) van interactieve digitale producten: je ontwikkelt web- en mobiele applicaties en je kent de basis van het ontwikkelen van games. De grenzen tussen deze digitale producten en de fysieke wereld vervagen echter steeds meer en steeds sneller. Je wordt daarom niet opgeleid als specialist in 1 specifieke programmeertaal of platform maar als een flexibele programmeur die zichzelf snel de mogelijkheden van een nieuwe taal of een nieuw platform (smartphone, game console, Internet of Things) eigen kan maken. Met als doel interactieve oplossingen voor klanten te bedenken en ontwikkelen die platform en programmeertaal ontstijgen. Je differentieert je van andere programmeurs door je mate van creativiteit en je kennis en gevoel voor interactie tussen apparaten en mensen (gebruikers).</string>
+    <string name="comm_med_gam_frag_text2">Een Rotterdamse CMGT\'er onderscheidt zich van andere programmeurs door de mate van creativiteit en de ontwerpgerichte benadering en de mate van kennis en gevoel voor interactie tussen apparaten en mensen (gebruikers). Bij alles wat je maakt staat de persoon die het gaat gebruiken centraal. Daarom heb je een onderzoekende houding en wil je gebruikers leren kennen en ze zo intensief mogelijk betrekken bij het maken van het product. De werkzaamheden en de mogelijkheden voor deze creatieve technoloog zijn aan verandering onderhevig omdat er veel ontwikkelingen in het vakgebied plaatsvinden. Nu ligt in de opleiding de nadruk op web- en mobiele technologieën. Game technologieën vormen een kleiner onderdeel.</string>
+    <string name="comm_med_gam_frag_text3">CMGT-studenten werken op bepaalde momenten samen met studenten van de opleiding Communication and Multimedia Design. Deze samenwerking is belangrijk omdat bij het ontwikkelen van interactieve oplossingen de samenwerking met andere creatieve specialisten, zoals ontwerpers en strategen, leidt tot een hogere eindkwaliteit.</string>
+    <string name="comm_med_gam_frag_text4">Na deze studie gaan CMGT\'ers als programmeur aan de slag bij internetbureaus of andere bureaus in de creatieve sector (reclame, marketing, ontwerp, innovatie). Een deel start een eigen onderneming of gaat werken als freelancer. Web Developer en Mobile Developer zijn dan ook bij uitstek de beroepen die veel afgestudeerden op dit moment uitoefenen na afloop van de studie.</string>
+    <string name="inf_frag_text1">We leiden je op tot software engineer. Je gaat aan de slag met het ontwikkelen van software voor diverse toepassingen. Je bent in staat complexe ICT-systemen te analyseren, ontwerpen en implementeren.</string>
+    <string name="inf_frag_text2">Software is overal om ons heen te vinden. Jij bent de specialist in het maken van grote en complexe software informatiesystemen die snel, efficiënt en veilig werken. Zo kun je denken aan het ontwikkelen van een functionele app, maar ook aan het analyseren van grote hoeveelheden data van social media. Bij het ontwikkelen van deze systemen kom je in aanraking met verschillende programmeertalen. Zo leer je in het eerste jaar programmeren in Python en geavanceerde programmeertalen zoals Java/C#. Vanaf het tweede jaar kies je zelf welke programmeertaal je wilt gebruiken. Naast het programmeren en ontwikkelen van verschillende toepassingen leer je ook samenwerken.</string>
+    <string name="inf_frag_text3">Na het volgen van de opleiding Informatica ben je breed inzetbaar binnen het vakgebied. Vanuit functies als data engineer, software developer en software engineer kun je verder groeien binnen de ICT.</string>
+    <string name="inf_frag_text4">Ben jij geïnteresseerd in nieuwe technologische ontwikkelingen, nieuwsgierig, een beetje eigenzinnig en een doorzetter, dan is de opleiding Informatica iets voor jou!</string>
+    <string name="inft_frag_text1">In het dagelijks leven zijn we steeds meer afhankelijk geworden van ICT-systemen. Reizen in het OV kan alleen nog met de OV-chipkaart, je bagage komt op Schiphol automatisch op de juiste plek, energiemeters worden ‘slim’ en medische ingrepen worden soms door een apparaat in plaats van een chirurg gedaan.</string>
+    <string name="inft_frag_text2">Allemaal voorbeelden waarbij hard- en software samenkomen in een enkel systeem. Als technisch informaticus draag je bij aan het ontwikkelen, beveiligen en in de lucht houden van deze systemen. Gedurende de studie maak je kennis met de technische aspecten van ICT. Je leert te programmeren in diverse programmeertalen, waaronder de zogenaamde \'lagere\' talen voor hardware toepassingen. Hiermee leer je oplossingen ontwikkelen voor verschillende apparaten, robots en andere moderne systemen.</string>
+    <string name="inft_frag_text3">Je bent een all-rounder op alle disciplines, maar specialiseert je ook in een of meerdere aspecten in het werkveld. Denk daarbij aan Machine Learning, Augmented Reality, Automated Systems en uiteraard de met IoT (Internet of Things) nauw verbonden met Embedded Systems.</string>
+    <string name="uitleg_vervoer">Met het openbaar vervoer: Bij metro Beurs uitstappen, oversteken naar het Maritiem Museum. Eenmaal daar, achter het museum bevind zich het standbeeld De Verwoeste Stad. Loop nu langs het kanaal. De ingang staat tegenover de fietsenrekken.</string>
 </resources>
