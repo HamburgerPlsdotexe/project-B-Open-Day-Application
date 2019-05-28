@@ -79,8 +79,8 @@
     <string name="tinf_titl">Technische Informatica</string>
     <string name="tinf_text">Als technisch informaticus werk je aan moderne ICT-systemen waarbij hard- en software geïntegreerd zijn. Dankzij je kennis van programmeren en hardware kun je juist op het snijpunt daarvan opereren.</string>
     
-    <string name="apr_header">Opendag 1 april</string>
-    <string name="mei_header">Opendag 14 Mei</string>
+    <string name="apr_header">Open dag 1 april</string>
+    <string name="mei_header">Open dag 14 mei</string>
     <string name="date_card_apr">Hier kan je informatie vinden over de programma! Kom een kijkje nemen bij onze opendag op 1 april!</string>
     <string name="date_card_may">Hier kan je informatie vinden over de programma! Kom een kijkje nemen bij onze opendag op 14 mei!</string>
 
@@ -119,7 +119,7 @@
     <string name="_12_30_uur">12.30 uur</string>
     <string name="lokaal_h_4_308">Lokaal H.4.308</string>
     <string name="_4e_etage">(4e etage)</string>
-    <string name="workshops">Workshops</string>
+    <string name="workshops" translatable="false">Workshops</string>
     <string name="duur_60_min">Duur: 60 min</string>
     <string name="_10_00_tot_14_00_uur">10.00 tot 14.00 uur</string>
     <string name="doorlopend">Doorlopend</string>
