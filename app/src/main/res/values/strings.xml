@@ -103,4 +103,36 @@
     <string name="inft_frag_text2">Allemaal voorbeelden waarbij hard- en software samenkomen in een enkel systeem. Als technisch informaticus draag je bij aan het ontwikkelen, beveiligen en in de lucht houden van deze systemen. Gedurende de studie maak je kennis met de technische aspecten van ICT. Je leert te programmeren in diverse programmeertalen, waaronder de zogenaamde \'lagere\' talen voor hardware toepassingen. Hiermee leer je oplossingen ontwikkelen voor verschillende apparaten, robots en andere moderne systemen.</string>
     <string name="inft_frag_text3">Je bent een all-rounder op alle disciplines, maar specialiseert je ook in een of meerdere aspecten in het werkveld. Denk daarbij aan Machine Learning, Augmented Reality, Automated Systems en uiteraard de met IoT (Internet of Things) nauw verbonden met Embedded Systems.</string>
     <string name="uitleg_vervoer">Met het openbaar vervoer: Bij metro Beurs uitstappen, oversteken naar het Maritiem Museum. Eenmaal daar, achter het museum bevind zich het standbeeld De Verwoeste Stad. Loop nu langs het kanaal. De ingang staat tegenover de fietsenrekken.</string>
+
+    <string name="plaats">Plaats</string>
+    <string name="voorbeelden_van">Voorbeelden van</string>
+    <string name="projecten">projecten</string>
+    <string name="voorlichtingsstand">Voorlichtingsstand</string>
+    <string name="hulp_bij_studiekeuze">Hulp bij Studiekeuze</string>
+    <string name="activiteit">Activiteit</string>
+    <string name="tijdstip">Tijdstip</string>
+    <string name="klassieke">klassieke</string>
+    <string name="voorlichting">Voorlichting</string>
+    <string name="duur_ca_45_min">Duur: Ca. 45 min.</string>
+    <string name="_10_30_uur">10.30 uur</string>
+    <string name="_11_30_uur">11.30 uur</string>
+    <string name="_12_30_uur">12.30 uur</string>
+    <string name="lokaal_h_4_308">Lokaal H.4.308</string>
+    <string name="_4e_etage">(4e etage)</string>
+    <string name="workshops">Workshops</string>
+    <string name="duur_60_min">Duur: 60 min</string>
+    <string name="_10_00_tot_14_00_uur">10.00 tot 14.00 uur</string>
+    <string name="doorlopend">Doorlopend</string>
+    <string name="bij_de_stand_van">Bij de stand van</string>
+    <string name="studievoorlichting">Studievoorlichting</string>
+    <string name="toelatingsexamens_en">Toelatingsexamens en</string>
+    <string name="ondersteunend">Ondersteunend</string>
+    <string name="_10_15_uur">10.15 uur</string>
+    <string name="_11_45_uur">11.45 uur</string>
+    <string name="examinering">examinering</string>
+    <string name="oudervoorlichting">Oudervoorlichting</string>
+    <string name="studenten_service_center">Studenten Service Center</string>
+    <string name="onderwijs">Onderwijs</string>
+    <string name="studielandschap">Studielandschap</string>
+    <string name="begane_grond">Begane grond</string>
 </resources>
