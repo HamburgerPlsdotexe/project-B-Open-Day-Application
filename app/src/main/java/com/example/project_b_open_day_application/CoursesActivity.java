@@ -2,6 +2,9 @@ package com.example.project_b_open_day_application;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +12,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
 public class CoursesActivity extends Fragment implements View.OnClickListener {
@@ -18,6 +22,7 @@ public class CoursesActivity extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_courses, container, false);
+
         CardView commCard = rootView.findViewById(R.id.feb_card);
         CardView commMedCard = rootView.findViewById(R.id.comm_media_card);
         CardView commMedGamCard = rootView.findViewById(R.id.crea_med_gam_des_card);
