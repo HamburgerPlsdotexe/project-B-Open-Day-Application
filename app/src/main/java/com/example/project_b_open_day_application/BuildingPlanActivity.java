@@ -48,6 +48,9 @@ public class BuildingPlanActivity extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
                 BuildingSelected = arrayBuildings[pos];
+                if (pos != 0){
+                    refreshPDF();
+                }
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
@@ -65,6 +68,10 @@ public class BuildingPlanActivity extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 FloorSelected = arrayFloors[position];
+                if (position != 0){
+                    refreshPDF();
+                }
+
             }
 
             @Override
@@ -72,29 +79,7 @@ public class BuildingPlanActivity extends Fragment {
             }
         });
         spinnerFloor.setAdapter(adapterFloor);
-
-        //Find ID of button and set an Onclicklistener to the button
-        Button buttonPDF = (Button) fragment_BuildingPlan.findViewById(R.id.button_refreshPDF);
-        buttonPDF.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pdfView = (PDFView) getView().findViewById(R.id.pdfView);
-                String pdfFile = BuildingSelected + " " + FloorSelected + ".pdf";
-                displayFromAsset(pdfFile);
-                PDFView pdfView_legend = (PDFView) getView().findViewById(R.id.pdfView_legend);
-                pdfView_legend.fromAsset("legenda.pdf").load();
-            }
-        });
-
-        //Set the legend pdfViewer
-//        PDFView pdfView_legend = (PDFView) getView().findViewById(R.id.pdfView_legend);
-//        pdfView_legend.fromAsset("legenda.pdf").load();
-//                .enableSwipe(false)
-//                .swipeHorizontal(false)
-//                .enableAnnotationRendering(true)
-//               .scrollHandle(new DefaultScrollHandle(this))
-//                .load();
-
+        displayFromAsset("99 BG.pdf");
         return fragment_BuildingPlan;
     }
 
@@ -103,7 +88,14 @@ public class BuildingPlanActivity extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle(R.string.nav_BuildingPlan);
+    }
 
+    public void refreshPDF(){
+        pdfView = (PDFView) getView().findViewById(R.id.pdfView);
+        String pdfFile = BuildingSelected + " " + FloorSelected + ".pdf";
+        displayFromAsset(pdfFile);
+        PDFView pdfView_legend = (PDFView) getView().findViewById(R.id.pdfView_legend);
+        pdfView_legend.fromAsset("legenda.pdf").load();
     }
 
     private void displayFromAsset(String assetFileName) {
