@@ -135,4 +135,20 @@
     <string name="onderwijs">Onderwijs</string>
     <string name="studielandschap">Studielandschap</string>
     <string name="begane_grond">Begane grond</string>
+
+    <!--Strings used only in Date Fragments-->
+    <string name="share_message_header">Kijk naar deze open dag!</string>
+    <string name="share_message_april">Ik heb een CMI open dag gevonden op Hogeschool Rotterdam.\n
+
+                        \nHet bevindt zich op 1 april 2019 van 10:00 tot 14:00.
+                        Het adres is Wijnhaven 107 3011 WN Rotterdam.</string>
+    <string name="share_message_may">Ik heb een CMI open dag gevonden op Hogeschool Rotterdam.\n
+
+                        \nHet bevindt zich op 14 mei 2019 van 10:00 tot 14:00.
+                        Het adres is Wijnhaven 107 3011 WN Rotterdam.</string>
+    <string name="select_social_media_platform_message">Selecteer uw gewenste social media platform</string>
+
+    <string name="calendar_event_title">Open dag CMI HR</string>
+    <string name="select_calendar_message">Selecteer uw gewenste kalender</string>
+
 </resources>

@@ -30,44 +30,6 @@ public class ItemDetailActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.sharebutton);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent shareintent = new Intent();
-                shareintent.setAction(Intent.ACTION_SEND);
-                shareintent.putExtra(Intent.EXTRA_SUBJECT, "Kijk naar deze open dag!");
-                shareintent.setType("text/plain");
-                shareintent.putExtra(Intent.EXTRA_TEXT, "Ik heb een CMI open dag gevonden op Hogeschool Rotterdam" +
-                        " \nHet bevindt zich op 30 februari 2019 van 10:00 tot 16:00");
-                ////shareintent.putExtra(android.intent.extra.STREAM, message); to add attachments
-                if (shareintent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(Intent.createChooser(shareintent, "Choose your sharing platform"));
-                }
-            }
-        });
-
-        FloatingActionButton fad = (FloatingActionButton) findViewById(R.id.calendarbutton);
-        fad.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent calendarIntent = new Intent(Intent.ACTION_INSERT, CalendarContract.Events.CONTENT_URI);
-                Calendar beginTime = Calendar.getInstance();
-                beginTime.set(2019, 3, 24, 11, 00);
-                Calendar endTime = Calendar.getInstance();
-                endTime.set(2019, 3, 24, 16, 30);
-                calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
-                calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
-                calendarIntent.putExtra(CalendarContract.Events.TITLE, "Open day CMI HR");
-                calendarIntent.putExtra(CalendarContract.Events.EVENT_LOCATION, "Secret dojo");
-                String titleCalenderIntent = "Choose your prefered calendar";
-                Intent calendarIntentwithChooser = Intent.createChooser(calendarIntent, titleCalenderIntent);
-                if (calendarIntentwithChooser.resolveActivity(getPackageManager()) != null) {
-                    startActivity(calendarIntentwithChooser);
-                }
-            }
-        });
-
         // Show the Up button in the action bar.
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

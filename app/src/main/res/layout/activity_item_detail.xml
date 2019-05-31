@@ -41,30 +41,4 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/sharebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|start"
-        android:layout_margin="@dimen/fab_margin"
-        android:gravity="bottom"
-        app:backgroundTint="#F44336"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="end|bottom"
-        app:rippleColor="#FFFFFF"
-        app:srcCompat="@android:drawable/ic_menu_share" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/calendarbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|start"
-        android:layout_margin="@dimen/fab_margin"
-        android:tint="#00FF2222"
-        app:backgroundTint="#F44336"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="end|center"
-        app:rippleColor="#FFFFFF"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
 </android.support.design.widget.CoordinatorLayout>

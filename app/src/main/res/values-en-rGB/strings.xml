@@ -95,4 +95,16 @@
     <string name="voorbeelden_van">Examples of</string>
     <string name="voorlichting">Counceling</string>
     <string name="voorlichtingsstand">Counceling pedistal</string>
+
+    <string name="share_message_header">Check this open day!</string>
+    <string name="share_message_april">I found a CMI open day at Rotterdam University of Applied Sciences.\n
+                        \nIt starts at 1 April 2019 10:00 and ends at 14:00.
+                        The adress is Wijnhaven 107 3011 WN Rotterdam.</string>
+    <string name="share_message_may">I found a CMI open day at Rotterdam University of Applied Sciences.\n
+                        \nIt starts at 14 May 2019 10:00 and ends at 14:00.
+                        The adress is Wijnhaven 107 3011 WN Rotterdam.</string>
+    <string name="select_social_media_platform_message">Select your preferred social media platform</string>
+
+    <string name="calendar_event_title">Open day CMI Rotterdam University</string>
+    <string name="select_calendar_message">Select your preferred calendar</string>
 </resources>
