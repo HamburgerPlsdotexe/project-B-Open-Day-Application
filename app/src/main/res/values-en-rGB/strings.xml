@@ -55,7 +55,7 @@
     <string name="tinf_text">As a technical computer scientist you work on modern IT systems in which hardware and software are integrated. Thanks to your programming and hardware knowledge, you can operate at the intersection thereof.</string>
     <string name="tinf_titl">Technical Informatics</string>
     <string name="titelvragenformulier">Questionform</string>
-    <string name="tutorial">Welcome to the HR open day app! Here you can find information about the CMI institute of Hogeschool Rotterdam</string>
+    <string name="tutorial">Welcome to the HR open day app! Here you can find information about the CMI institute of Hogeschool Rotterdam. Click on the buttons below to go to the pages with open days or the pages with available courses.</string>
     <string name="uitlegvragenformulier">If you have any questions, you can ask them on this page. Enter the details and send your message, we will reach you within 3 working days.</string>
     <string name="vrijdag">Friday</string>
     <string name="warning_tijden">Please note: adjusted opening times may apply during holiday periods.</string>
@@ -107,4 +107,7 @@
 
     <string name="calendar_event_title">Open day CMI Rotterdam University</string>
     <string name="select_calendar_message">Select your preferred calendar</string>
+
+    <string name="quick_button_courses_text">Courses</string>
+    <string name="quick_button_openday_text">Open Days</string>
 </resources>
