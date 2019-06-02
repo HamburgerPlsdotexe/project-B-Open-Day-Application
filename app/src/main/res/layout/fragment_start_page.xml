@@ -36,30 +36,4 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/nav_Courses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/startpage_text"
-        android:layout_alignEnd="@+id/main_image"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="250dp"
-        android:text="Some text"
-        android:clickable="true"
-        android:onClick="click"
-        android:textAlignment="textStart"
-        android:textSize="36sp" />
-
-    <TextView
-        android:id="@+id/date_apr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/startpage_text"
-        android:layout_alignEnd="@+id/main_image"
-        android:layout_marginEnd="262dp"
-        android:layout_marginBottom="112dp"
-        android:text="Some text"
-        android:textAlignment="textStart"
-        android:textSize="36sp" />
-
 </RelativeLayout>
