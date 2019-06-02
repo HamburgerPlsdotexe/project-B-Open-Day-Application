@@ -21,6 +21,18 @@ public class StartPageActivity extends Fragment {
             View view = inflater.inflate(R.layout.fragment_start_page, container, false);
 
             final TextView textview = view.findViewById(R.id.nav_Courses);
+            final TextView textview2 = view.findViewById(R.id.nav_Dates);
+            textview2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Fragment dates = new DatesActivity();
+                    FragmentManager fm = getFragmentManager();
+                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                    fragmentTransaction.replace(R.id.content_frame, dates);
+                    fragmentTransaction.commit();
+                }
+            });
+
             textview.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -24,28 +24,29 @@
     <TextView
         android:id="@+id/nav_Courses"
         android:layout_width="298dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_above="@+id/startpage_text"
         android:layout_alignEnd="@+id/main_image"
         android:layout_marginEnd="113dp"
-        android:layout_marginBottom="232dp"
-        android:background="#404040"
+        android:layout_marginBottom="144dp"
+        android:background="#BB1835"
+        android:lineSpacingExtra="30sp"
         android:text="Lijst met opleidingen"
         android:textAlignment="textStart"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/nav_Dates"
         android:layout_width="298dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_above="@+id/startpage_text"
         android:layout_alignEnd="@+id/main_image"
         android:layout_marginEnd="113dp"
-        android:layout_marginBottom="137dp"
-        android:background="#404040"
+        android:layout_marginBottom="39dp"
+        android:background="#BB1835"
         android:text="Lijst met Data"
         android:textAlignment="textStart"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/startpage_text"
