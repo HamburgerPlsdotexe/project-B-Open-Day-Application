@@ -16,7 +16,7 @@
     <string name="nav_StartScreen">Startscherm</string>
     <string name="banner">Banner voor elk pagina</string>
 
-    <string name="tutorial">Welkom bij de HR open dag app! Hier kan je informatie vinden over de instituut CMI van Hogeschool Rotterdam</string>
+    <string name="tutorial">Welkom bij de HR open dag app! Hier kan je informatie vinden over de instituut CMI van Hogeschool Rotterdam. Klik op de knoppen beneden om de lijst met open dagen te bekijken of de lijst met opleidingen.</string>
 
     <!--strings used only in BuildingPlan Fragment-->
     <string name="button_refreshPDF">Herlaad PDF</string>
@@ -150,5 +150,8 @@
 
     <string name="calendar_event_title">Open dag CMI HR</string>
     <string name="select_calendar_message">Selecteer uw gewenste kalender</string>
+
+    <string name="quick_button_courses_text">Opleidingen</string>
+    <string name="quick_button_openday_text">Open Dagen</string>
 
 </resources>
