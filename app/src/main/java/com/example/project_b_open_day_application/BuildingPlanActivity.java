@@ -79,7 +79,6 @@ public class BuildingPlanActivity extends Fragment {
             }
         });
         spinnerFloor.setAdapter(adapterFloor);
-        displayFromAsset("99 BG.pdf");
         return fragment_BuildingPlan;
     }
 
