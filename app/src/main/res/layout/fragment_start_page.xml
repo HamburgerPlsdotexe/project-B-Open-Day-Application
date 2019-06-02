@@ -20,14 +20,41 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/hr_small" />
 
+
+    <TextView
+        android:id="@+id/nav_Courses"
+        android:layout_width="298dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/startpage_text"
+        android:layout_alignEnd="@+id/main_image"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="232dp"
+        android:background="#404040"
+        android:text="Lijst met opleidingen"
+        android:textAlignment="textStart"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/nav_Dates"
+        android:layout_width="298dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/startpage_text"
+        android:layout_alignEnd="@+id/main_image"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="137dp"
+        android:background="#404040"
+        android:text="Lijst met Data"
+        android:textAlignment="textStart"
+        android:textSize="30sp" />
+
     <TextView
         android:id="@+id/startpage_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="60dp"
         android:alpha=".7"
         android:background="@android:color/background_light"
         android:lineSpacingExtra="10sp"
@@ -35,31 +62,4 @@
         android:text="@string/tutorial"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="15sp" />
-
-
-    <TextView
-        android:id="@+id/nav_Courses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/startpage_text"
-        android:layout_alignEnd="@+id/main_image"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="250dp"
-        android:text="Some text"
-        android:clickable="true"
-        android:onClick="click"
-        android:textAlignment="textStart"
-        android:textSize="36sp" />
-
-    <TextView
-        android:id="@+id/date_apr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/startpage_text"
-        android:layout_alignEnd="@+id/main_image"
-        android:layout_marginEnd="262dp"
-        android:layout_marginBottom="112dp"
-        android:text="Some text"
-        android:textAlignment="textStart"
-        android:textSize="36sp" />
 </RelativeLayout>
