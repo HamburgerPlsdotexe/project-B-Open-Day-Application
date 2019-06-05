@@ -45,9 +45,9 @@ public class AprilFragment extends Fragment {
             public void onClick(View view) {
                 Intent calendarIntent = new Intent(Intent.ACTION_INSERT, CalendarContract.Events.CONTENT_URI);
                 Calendar beginTime = Calendar.getInstance();
-                beginTime.set(2019, 4, 1, 10, 00);
+                beginTime.set(2019, 3, 1, 10, 00);
                 Calendar endTime = Calendar.getInstance();
-                endTime.set(2019, 4, 1, 14, 00);
+                endTime.set(2019, 3, 1, 14, 00);
                 calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
                 calendarIntent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis());
                 calendarIntent.putExtra(CalendarContract.Events.TITLE, getContext().getString(R.string.calendar_event_title));
