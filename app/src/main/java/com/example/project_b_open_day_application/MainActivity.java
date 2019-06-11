@@ -3,6 +3,7 @@ package com.example.project_b_open_day_application;
 
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -51,6 +53,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    public void showhome(){
+        Fragment fragment = new StartPageActivity();
+        if(fragment!=null){
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content_frame, fragment, fragment.getTag()).commit();
+        }
+    }
+
     @Override
     public void onBackPressed() {
         //Handle back action from the phone. So when the drawer is opened
@@ -59,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            showhome();
         }
     }
 
