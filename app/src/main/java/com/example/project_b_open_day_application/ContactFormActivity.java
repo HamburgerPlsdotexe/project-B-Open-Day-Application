@@ -18,8 +18,6 @@ public class ContactFormActivity extends Fragment implements View.OnClickListene
 
     private Button sendBtn;
     private String subjectString;
-    private String nameString;
-    private String emailString;
     private String messageString;
 
     @Nullable
@@ -53,14 +51,10 @@ public class ContactFormActivity extends Fragment implements View.OnClickListene
 
     public void onClick(View view) {
         EditText subject = getActivity().findViewById(R.id.Inhoud_onderwerpveld);
-        EditText name = getActivity().findViewById(R.id.Inhoud_naamveld);
-        EditText email = getActivity().findViewById(R.id.Inhoud_emailveld);
         EditText message = getActivity().findViewById(R.id.Inhoud_berichtveld);
 
         subjectString = subject.getText().toString();
-        emailString = email.getText().toString();
         messageString = message.getText().toString();
-        nameString = name.getText().toString();
         sendMail(subjectString, messageString, "service@hr.nl ");
     }
 
