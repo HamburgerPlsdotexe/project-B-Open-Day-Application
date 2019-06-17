@@ -9,7 +9,7 @@
     <string name="nav_header_desc" translatable="false">Navigation header</string>
     <string name="action_settings" translatable="false">Settings</string>
     <string name="nav_Courses">Opleidingen CMI</string>
-    <string name="nav_Dates">Datums Open dagen</string>
+    <string name="nav_Dates">Datums open dagen</string>
     <string name="nav_Contact" translatable="false">Contact</string>
     <string name="nav_ContactForm">Vragenformulier</string>
     <string name="nav_BuildingPlan">Plattegrond</string>
